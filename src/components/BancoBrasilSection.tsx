@@ -19,37 +19,21 @@ export default function BancoBrasilSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left: Visual */}
           <div className="flex flex-col gap-6">
-            {/* BB Logo placeholder card */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 rounded-xl bg-[#FBFB2F] flex items-center justify-center shrink-0 p-2">
-                  <Image
-                    src="/images/logos/banco-brasil-logo-curta.svg"
-                    alt="Banco do Brasil"
-                    width={48}
-                    height={48}
-                  />
-                </div>
-                <div>
-                  <p className="text-white/60 text-sm font-medium">Parceria exclusiva</p>
-                  <p className="text-white font-black text-xl leading-tight">Banco do Brasil</p>
-                </div>
+            {/* BB Partnership card */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 flex items-center gap-6">
+              <div className="w-20 h-20 rounded-2xl bg-[#FBFB2F] flex items-center justify-center shrink-0 p-3">
+                <Image
+                  src="/images/logos/banco-brasil-logo-curta.svg"
+                  alt="Banco do Brasil"
+                  width={56}
+                  height={56}
+                />
               </div>
-              <p className="text-blue-200 text-sm leading-relaxed">
-                Financiamento facilitado pelo{" "}
-                <strong className="text-white">Banco do Brasil</strong>. Faça
-                seu login no App BB e acesse{" "}
-                <em>"Detalhar limites de crédito"</em>.
-              </p>
-              <Link
-                href="#formulario"
-                className="mt-5 inline-flex items-center gap-2 bg-[#FBFB2F] hover:bg-[#E8E800] text-[#003F7A] font-bold text-sm px-5 py-3 rounded-xl transition-all duration-200"
-              >
-                Consultar limite no App BB
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </Link>
+              <div>
+                <p className="text-[#FBFB2F] text-xs font-bold uppercase tracking-widest mb-1">Parceria exclusiva</p>
+                <p className="text-white font-black text-2xl leading-tight mb-1">Banco do Brasil</p>
+                <p className="text-blue-200 text-sm">A segurança do maior banco público do Brasil.</p>
+              </div>
             </div>
 
             {/* Doctor image */}
