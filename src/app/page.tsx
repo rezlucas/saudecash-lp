@@ -8,6 +8,7 @@ import ProceduresSection from "@/components/ProceduresSection";
 import MidPageForm from "@/components/MidPageForm";
 import FAQSection from "@/components/FAQSection";
 import FinalCTA from "@/components/FinalCTA";
+import PreFooterCTA from "@/components/PreFooterCTA";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
         <MidPageForm />
         <FAQSection />
         <FinalCTA />
+        <PreFooterCTA />
       </main>
       <Footer />
     </>

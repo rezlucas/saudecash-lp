@@ -100,22 +100,6 @@ export default function ProceduresSection() {
           ))}
         </div>
 
-        {/* Not found CTA */}
-        <div className="mt-10 text-center">
-          <div className="inline-flex items-center gap-3 bg-white border border-[#005FB9]/20 rounded-2xl px-6 py-4 shadow-sm">
-            <span className="text-2xl" aria-hidden="true">🔍</span>
-            <div className="text-left">
-              <p className="text-sm font-semibold text-[#0F172A]">Não encontrou o procedimento?</p>
-              <p className="text-xs text-gray-500">Fale com um consultor — nossa rede está em expansão constante.</p>
-            </div>
-            <Link
-              href="#formulario"
-              className="shrink-0 bg-[#005FB9] hover:bg-[#00519D] text-white font-bold text-sm px-4 py-2.5 rounded-xl transition-colors"
-            >
-              Consultar
-            </Link>
-          </div>
-        </div>
       </div>
     </section>
   );
