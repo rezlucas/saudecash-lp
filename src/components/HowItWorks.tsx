@@ -53,7 +53,7 @@ export default function HowItWorks() {
         </div>
 
         {/* Content: Accordion + Image */}
-        <div className="bg-gray-50 rounded-3xl p-8 md:p-10 flex flex-col md:flex-row gap-10 items-center shadow-sm border border-gray-100">
+        <div className="bg-gray-50 rounded-3xl p-0 md:p-10 flex flex-col md:flex-row gap-10 items-center shadow-sm border border-gray-100">
 
           {/* Left: Accordion */}
           <div className="w-full md:w-3/5 flex flex-col gap-2">
@@ -113,7 +113,7 @@ export default function HowItWorks() {
                       id={`step-content-${i}`}
                       className="px-5 pb-5"
                     >
-                      <div className="border-l-4 border-[#005FB9] pl-4 ml-[52px]">
+                      <div className="md:border-l-4 border-[#005FB9] md:pl-4 ml-[52px]">
                         <p className="text-gray-600 text-sm leading-relaxed">
                           {step.description}
                         </p>

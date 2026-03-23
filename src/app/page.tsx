@@ -23,10 +23,10 @@ export default function Home() {
       <main id="main-content">
         <HeroSection />
         <TrustBar />
+        <ProceduresSection />
         <TwoPathsSection />
         <HowItWorks />
         <BancoBrasilSection />
-        <ProceduresSection />
         <MidPageForm />
         <FAQSection />
         <FinalCTA />

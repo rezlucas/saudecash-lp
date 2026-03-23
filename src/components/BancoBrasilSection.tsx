@@ -45,18 +45,6 @@ export default function BancoBrasilSection() {
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 40vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#003F7A]/60 to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4 flex gap-3">
-                {[
-                  { value: "0%", label: "Consulta de CPF" },
-                  { value: "24h", label: "Retorno do consultor" },
-                ].map((stat) => (
-                  <div key={stat.label} className="bg-white/15 backdrop-blur-sm rounded-xl p-3 border border-white/20 flex-1">
-                    <p className="text-xl font-black text-[#FBFB2F]">{stat.value}</p>
-                    <p className="text-white text-xs font-medium mt-0.5">{stat.label}</p>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
 
