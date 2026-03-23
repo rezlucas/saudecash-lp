@@ -52,7 +52,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
     <li className="border-b border-gray-100 last:border-0">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between gap-4 py-5 text-left hover:text-[#005FB9] transition-colors group"
+        className="w-full flex items-center justify-between gap-4 py-5 text-left cursor-pointer hover:text-[#005FB9] transition-colors group"
         aria-expanded={open}
       >
         <span className="font-semibold text-[#0F172A] group-hover:text-[#005FB9] text-sm sm:text-base pr-4">
