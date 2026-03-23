@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -77,17 +78,16 @@ export default function HeroSection() {
           {/* Hero image placeholder */}
           <div className="relative hidden md:block">
             <div className="relative mx-auto w-full max-w-md">
-              {/* Main image card */}
-              <div className="relative rounded-2xl overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-2xl aspect-[4/5]">
-                {/* Placeholder image representation */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-400/30 to-blue-800/50" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-white/60 gap-3">
-                  <svg className="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1} aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                  <span className="text-sm font-medium">Foto de paciente sorrindo</span>
-                  <span className="text-xs opacity-70">1200 × 1500px</span>
-                </div>
+              {/* Main image */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/5]">
+                <Image
+                  src="/images/pessoas/hero-paciente.webp"
+                  alt="Paciente sorrindo após realizar seu procedimento com a SaúdeCash"
+                  fill
+                  className="object-cover"
+                  priority
+                  sizes="(max-width: 768px) 0px, 50vw"
+                />
               </div>
 
               {/* Floating stat card */}

@@ -21,15 +21,14 @@ export default function Navbar() {
         aria-label="Navegação principal"
       >
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 shrink-0">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-[#005FB9] flex items-center justify-center">
-              <span className="text-white font-black text-sm leading-none">S</span>
-            </div>
-            <span className="font-black text-xl text-[#005FB9] tracking-tight">
-              Saúde<span className="text-[#005FB9]">Cash</span>
-            </span>
-          </div>
+        <Link href="/" className="flex items-center shrink-0">
+          <Image
+            src="/images/logos/saudecash-logo.svg"
+            alt="SaúdeCash"
+            width={140}
+            height={36}
+            priority
+          />
         </Link>
 
         {/* Desktop links */}

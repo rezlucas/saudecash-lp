@@ -10,6 +10,9 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/images/logos/favicon.png",
+  },
   title: "SaúdeCash — Crédito para saúde pelo Banco do Brasil",
   description:
     "Financie cirurgias, tratamentos e procedimentos estéticos com crédito do Banco do Brasil. Até R$ 100.000 em até 60x. Atendimento humanizado e clínicas credenciadas em todo o Brasil.",

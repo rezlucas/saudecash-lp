@@ -48,7 +48,8 @@ export default function ProceduresSection() {
             id="procedures-heading"
             className="text-3xl sm:text-4xl font-black text-[#0F172A] mb-4 tracking-tight"
           >
-            Para o que você realmente precisa{" "}
+            Para o que você realmente precisa
+            <br />
             <span className="text-[#005FB9]">e o plano muitas vezes não cobre.</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">

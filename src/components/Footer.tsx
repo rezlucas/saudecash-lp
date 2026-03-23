@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const footerLinks = [
   { label: "Como Funciona", href: "#como-funciona" },
@@ -16,11 +17,13 @@ export default function Footer() {
         <div className="py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-[#005FB9] flex items-center justify-center">
-                <span className="text-white font-black text-sm">S</span>
-              </div>
-              <span className="font-black text-xl tracking-tight">SaúdeCash</span>
+            <div className="mb-4">
+              <Image
+                src="/images/logos/saudecash-logo-branco.svg"
+                alt="SaúdeCash"
+                width={140}
+                height={36}
+              />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs mb-6">
               Crédito para saúde com a segurança do Banco do Brasil. Financie
@@ -28,10 +31,12 @@ export default function Footer() {
             </p>
             {/* Partners */}
             <div className="flex items-center gap-3">
-              <div className="bg-[#FBFB2F] rounded-lg px-3 py-2 flex items-center gap-1.5">
-                <span className="text-[#003F7A] font-black text-sm">BB</span>
-                <span className="text-[#003F7A] text-xs font-medium">Banco do Brasil</span>
-              </div>
+              <Image
+                src="/images/logos/banco-brasil-logo-amarela.svg"
+                alt="Banco do Brasil"
+                width={120}
+                height={32}
+              />
             </div>
           </div>
 

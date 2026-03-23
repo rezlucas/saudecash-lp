@@ -41,14 +41,14 @@ export default function TrustBar() {
       aria-label="Diferenciais SaúdeCash"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+        <ul className="grid grid-cols-2 gap-x-8 gap-y-3 mx-auto w-fit">
           {trustItems.map((item) => (
             <li
               key={item.text}
-              className="flex items-center gap-2 text-white"
+              className="flex items-center gap-2 text-white justify-center text-center"
             >
               <span className="text-[#FBFB2F] shrink-0">{item.icon}</span>
-              <span className="text-sm font-semibold whitespace-nowrap">{item.text}</span>
+              <span className="text-sm font-semibold">{item.text}</span>
             </li>
           ))}
         </ul>

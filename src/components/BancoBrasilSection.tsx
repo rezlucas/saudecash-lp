@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const benefits = [
   "Taxas e condições de um banco sólido, não de uma financeira",
@@ -21,9 +22,13 @@ export default function BancoBrasilSection() {
             {/* BB Logo placeholder card */}
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               <div className="flex items-center gap-4 mb-6">
-                {/* BB logo placeholder */}
-                <div className="w-16 h-16 rounded-xl bg-[#FBFB2F] flex items-center justify-center shrink-0">
-                  <span className="text-[#003F7A] font-black text-xl">BB</span>
+                <div className="w-16 h-16 rounded-xl bg-[#FBFB2F] flex items-center justify-center shrink-0 p-2">
+                  <Image
+                    src="/images/logos/banco-brasil-logo-curta.svg"
+                    alt="Banco do Brasil"
+                    width={48}
+                    height={48}
+                  />
                 </div>
                 <div>
                   <p className="text-white/60 text-sm font-medium">Parceria exclusiva</p>
@@ -47,22 +52,27 @@ export default function BancoBrasilSection() {
               </Link>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { value: "R$ 100k", label: "Máximo financiado" },
-                { value: "60x", label: "Meses para pagar" },
-                { value: "0%", label: "Consulta de CPF" },
-                { value: "24h", label: "Retorno do consultor" },
-              ].map((stat) => (
-                <div
-                  key={stat.label}
-                  className="bg-white/10 rounded-xl p-4 border border-white/15"
-                >
-                  <p className="text-2xl font-black text-[#FBFB2F]">{stat.value}</p>
-                  <p className="text-blue-200 text-xs font-medium mt-1">{stat.label}</p>
-                </div>
-              ))}
+            {/* Doctor image */}
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-xl">
+              <Image
+                src="/images/pessoas/medico-atendimento.webp"
+                alt="Médico em atendimento humanizado pela SaúdeCash"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 40vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#003F7A]/60 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4 flex gap-3">
+                {[
+                  { value: "0%", label: "Consulta de CPF" },
+                  { value: "24h", label: "Retorno do consultor" },
+                ].map((stat) => (
+                  <div key={stat.label} className="bg-white/15 backdrop-blur-sm rounded-xl p-3 border border-white/20 flex-1">
+                    <p className="text-xl font-black text-[#FBFB2F]">{stat.value}</p>
+                    <p className="text-white text-xs font-medium mt-0.5">{stat.label}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
