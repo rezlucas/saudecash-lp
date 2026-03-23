@@ -33,10 +33,10 @@ export default function HeroSection() {
 
             <h1
               id="hero-heading"
-              className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight mb-6"
+              className="text-3xl sm:text-4xl lg:text-5xl font-black leading-[1.15] tracking-tight mb-6"
             >
               Você já adiou{" "}
-              <span className="text-[#FBFB2F]">várias vezes.</span>
+              <span className="text-[#FBFB2F] whitespace-nowrap">várias vezes.</span>
               <br />
               Esse é o momento.
             </h1>
