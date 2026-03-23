@@ -37,8 +37,9 @@ export default function HeroSection() {
             >
               Você já adiou{" "}
               <span className="text-[#FBFB2F] whitespace-nowrap">várias vezes.</span>
+
               <br />
-              Esse é o momento.
+              <span className="whitespace-nowrap">Esse é o momento.</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-blue-100 leading-relaxed mb-8 max-w-lg">
