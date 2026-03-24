@@ -34,7 +34,7 @@ export default function FinalCTA() {
         </div>
 
         {/* Form card */}
-        <div id="formulario-final" className="bg-white rounded-3xl p-8 sm:p-10 shadow-2xl">
+        <div id="formulario-final" className="bg-white rounded-3xl p-0 sm:p-10 shadow-2xl overflow-hidden">
           <HubSpotForm />
         </div>
 

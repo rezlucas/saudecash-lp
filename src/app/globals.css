@@ -39,6 +39,11 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection {
+  background-color: #fbfb2f;
+  color: #005fb9;
+}
+
 /* Focus ring for accessibility */
 *:focus-visible {
   outline: 3px solid #005FB9;
