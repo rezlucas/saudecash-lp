@@ -88,7 +88,7 @@ export default function ProceduresSection() {
                 ))}
               </div>
               <Link
-                href="#formulario"
+                href="#formulario-final"
                 className="text-[#005FB9] hover:text-[#00519D] font-semibold text-sm flex items-center gap-1 group"
               >
                 Quero saber mais

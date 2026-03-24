@@ -77,7 +77,7 @@ export default function TwoPathsSection() {
                 </p>
               </div>
               <Link
-                href="#formulario"
+                href="#formulario-final"
                 className={`${path.ctaClass} inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm transition-all duration-200 mt-auto`}
               >
                 {path.cta}
@@ -95,7 +95,7 @@ export default function TwoPathsSection() {
         </p>
         <div className="text-center mt-4">
           <Link
-            href="#formulario"
+            href="#formulario-final"
             className="inline-flex items-center gap-2 text-[#005FB9] font-semibold hover:underline text-sm"
           >
             Quero saber mais

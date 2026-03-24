@@ -50,6 +50,32 @@ html {
   outline-offset: 2px;
 }
 
+/* HubSpot form button override */
+.hsfc-Button {
+  background-color: #FBFB2F !important;
+  color: #003F7A !important;
+  font-weight: 900 !important;
+  font-size: 1rem !important;
+  padding: 0.875rem 2rem !important;
+  border-radius: 0.75rem !important;
+  border: none !important;
+  cursor: pointer !important;
+  width: 100% !important;
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12) !important;
+  letter-spacing: 0 !important;
+}
+
+.hsfc-Button:hover {
+  background-color: #E8E800 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15) !important;
+}
+
+.hsfc-Button:active {
+  transform: translateY(0) !important;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;

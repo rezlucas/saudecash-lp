@@ -47,7 +47,7 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <Link
-          href="#formulario"
+          href="#formulario-final"
           className="hidden md:inline-flex items-center gap-2 bg-[#FBFB2F] hover:bg-[#E8E800] text-[#003F7A] font-bold text-sm px-5 py-2.5 rounded-xl transition-colors duration-150 shadow-sm"
         >
           Falar com Especialista
@@ -101,7 +101,7 @@ export default function Navbar() {
             ))}
           </ul>
           <Link
-            href="#formulario"
+            href="#formulario-final"
             className="mt-3 flex items-center justify-center bg-[#FBFB2F] hover:bg-[#E8E800] text-[#003F7A] font-bold text-sm px-5 py-3 rounded-xl transition-colors duration-150"
             onClick={() => setMenuOpen(false)}
           >

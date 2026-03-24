@@ -88,7 +88,7 @@ export default function BancoBrasilSection() {
             </p>
 
             <Link
-              href="#formulario"
+              href="#formulario-final"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#FBFB2F] hover:bg-[#E8E800] text-[#003F7A] font-bold px-7 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
             >
               Quero saber mais

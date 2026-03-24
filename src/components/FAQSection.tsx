@@ -113,7 +113,7 @@ export default function FAQSection() {
                 Um consultor pode te ajudar com qualquer pergunta, sem compromisso.
               </p>
               <a
-                href="#formulario"
+                href="#formulario-final"
                 className="inline-flex items-center gap-2 bg-[#FBFB2F] hover:bg-[#E8E800] text-[#003F7A] font-bold text-sm px-5 py-3 rounded-xl transition-colors"
               >
                 Falar com consultor

@@ -52,7 +52,7 @@ export default function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-3 items-center sm:items-start">
               <Link
-                href="#formulario"
+                href="#formulario-final"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#FBFB2F] hover:bg-[#E8E800] text-[#003F7A] font-bold text-base px-7 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">

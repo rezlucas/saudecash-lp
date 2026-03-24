@@ -80,7 +80,7 @@ export default function Footer() {
             </ul>
 
             <Link
-              href="#formulario"
+              href="#formulario-final"
               className="mt-6 inline-flex items-center gap-2 bg-[#FBFB2F] hover:bg-[#E8E800] text-[#003F7A] font-bold text-sm px-5 py-3 rounded-xl transition-colors"
             >
               Falar com Especialista

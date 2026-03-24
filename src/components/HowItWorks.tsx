@@ -126,7 +126,7 @@ export default function HowItWorks() {
 
             <div className="mt-4 ml-1">
               <Link
-                href="#formulario"
+                href="#formulario-final"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#005FB9] hover:bg-[#00519D] text-white font-bold px-7 py-3.5 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 text-sm"
               >
                 Solicitar Atendimento
