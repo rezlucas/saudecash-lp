@@ -12,7 +12,7 @@ const procedures = [
     emoji: "😁",
     title: "Odontologia",
     description:
-      "Implantes, próteses, aparelhos, facetas. Um sorriso diferente muda postura, presença, autoconfiança — e não precisa ficar para depois.",
+      "Implantes, próteses, aparelhos, facetas. Um sorriso diferente muda postura, presença, autoconfiança, e não precisa ficar para depois.",
     tags: ["Implantes", "Facetas", "Aparelhos", "Próteses"],
   },
   {
@@ -55,7 +55,7 @@ export default function ProceduresSection() {
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             A SaúdeCash financia uma ampla gama de procedimentos em clínicas
             credenciadas. Não encontrou o que procura? Fale com um consultor
-            mesmo assim — a gente descobre como ajudar.
+            mesmo assim, a gente descobre como ajudar.
           </p>
         </div>
 

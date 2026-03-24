@@ -44,7 +44,7 @@ export default function HeroSection() {
 
             <p className="text-lg sm:text-xl text-blue-100 leading-relaxed mb-8 max-w-lg">
               Seja para realizar uma cirurgia que você sempre quis, tratar algo
-              que te incomoda há anos ou cuidar da sua saúde de verdade — a
+              que te incomoda há anos ou cuidar da sua saúde de verdade, a
               SaúdeCash existe para que o{" "}
               <strong className="text-white">valor não seja o motivo</strong> de
               você continuar esperando.

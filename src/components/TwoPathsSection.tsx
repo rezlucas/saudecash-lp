@@ -19,7 +19,7 @@ const paths = [
     emoji: "🩺",
     title: "Para quem tem uma necessidade",
     description:
-      "Um procedimento que o plano não cobre, uma cirurgia que não pode mais esperar, um tratamento que faz diferença real na sua qualidade de vida. Fale com a gente — a gente encontra um caminho.",
+      "Um procedimento que o plano não cobre, uma cirurgia que não pode mais esperar, um tratamento que faz diferença real na sua qualidade de vida. Fale com a gente, a gente encontra um caminho.",
     cta: "Quero falar com um consultor",
     bg: "bg-white",
     textColor: "text-[#0F172A]",

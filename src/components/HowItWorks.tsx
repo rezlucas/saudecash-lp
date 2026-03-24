@@ -9,7 +9,7 @@ const steps = [
     number: "01",
     title: "Você preenche o formulário",
     description:
-      "Nome, WhatsApp e o procedimento que você quer realizar. Leva menos de 1 minuto — sem consulta de CPF e sem nenhum compromisso.",
+      "Nome, WhatsApp e o procedimento que você quer realizar. Leva menos de 1 minuto, sem consulta de CPF e sem nenhum compromisso.",
   },
   {
     number: "02",
@@ -44,7 +44,7 @@ export default function HowItWorks() {
             id="how-heading"
             className="text-3xl sm:text-4xl font-black text-[#0F172A] mb-4 tracking-tight"
           >
-            Simples assim — e você{" "}
+            Simples assim, e você{" "}
             <span className="text-[#005FB9]">não faz isso sozinho.</span>
           </h2>
           <p className="text-lg text-gray-500 max-w-xl mx-auto">

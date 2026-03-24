@@ -6,7 +6,7 @@ const faqs = [
   {
     question: "Preciso saber o valor exato do procedimento?",
     answer:
-      "Não. No formulário você informa apenas o procedimento que quer realizar. O consultor te ajuda a entender o valor, verificar o crédito disponível e encontrar as melhores condições — tudo na conversa.",
+      "Não. No formulário você informa apenas o procedimento que quer realizar. O consultor te ajuda a entender o valor, verificar o crédito disponível e encontrar as melhores condições, tudo na conversa.",
   },
   {
     question: "Quem pode usar a SaúdeCash?",
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Preencher o formulário gera algum compromisso?",
     answer:
-      "Nenhum. O formulário é o começo de uma conversa — não de um contrato. Você recebe o contato de um consultor, tira suas dúvidas e decide com calma se quer avançar.",
+      "Nenhum. O formulário é o começo de uma conversa, não de um contrato. Você recebe o contato de um consultor, tira suas dúvidas e decide com calma se quer avançar.",
   },
   {
     question: "O formulário consulta meu CPF?",
