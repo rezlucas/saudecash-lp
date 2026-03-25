@@ -3,7 +3,7 @@ import HubSpotForm from "./HubSpotForm";
 export default function FinalCTA() {
   return (
     <section
-      className="py-20 bg-[#005FB9] relative overflow-hidden"
+      className="pt-28 pb-20 bg-[#005FB9] relative overflow-hidden"
       aria-labelledby="final-cta-heading"
     >
       {/* Background decoration */}
@@ -25,11 +25,10 @@ export default function FinalCTA() {
             className="text-4xl sm:text-5xl font-black text-white leading-tight tracking-tight mb-4"
           >
             Chega de deixar sua{" "}
-            <span className="text-[#FBFB2F]">saúde para depois.</span>
+            <span className="text-[#FBFB2F] whitespace-nowrap">saúde para depois.</span>
           </h2>
           <p className="text-blue-100 text-lg leading-relaxed max-w-xl mx-auto">
-            Preencha o formulário. Um consultor da SaúdeCash entrará em contato
-            e te mostrará o caminho mais fácil para realizar o seu procedimento.
+            Preencha o formulário. Um consultor entrará em contato e te mostrará o caminho mais fácil para realizar o seu procedimento.
           </p>
         </div>
 

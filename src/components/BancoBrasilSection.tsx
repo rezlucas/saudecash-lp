@@ -55,11 +55,12 @@ export default function BancoBrasilSection() {
             </span>
             <h2
               id="bb-heading"
-              className="text-3xl sm:text-4xl font-black mb-6 leading-tight tracking-tight"
+              className="text-2xl sm:text-3xl font-black mb-6 leading-tight tracking-tight"
             >
               O crédito é do{" "}
-              <span className="text-[#FBFB2F]">Banco do Brasil</span> com a
-              facilidade da SaúdeCash.
+              <span className="text-[#FBFB2F] whitespace-nowrap">Banco do Brasil</span>
+              <br />
+              <span className="whitespace-nowrap">com a facilidade da SaúdeCash.</span>
             </h2>
             <p className="text-blue-100 text-base leading-relaxed mb-8">
               O crédito é operado diretamente pelo Banco do Brasil, o banco que
