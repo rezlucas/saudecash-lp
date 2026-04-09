@@ -4,6 +4,7 @@ import TrustBar from "@/components/TrustBar";
 import TwoPathsSection from "@/components/TwoPathsSection";
 import HowItWorks from "@/components/HowItWorks";
 import BancoBrasilSection from "@/components/BancoBrasilSection";
+import EligibilitySection from "@/components/EligibilitySection";
 import ProceduresSection from "@/components/ProceduresSection";
 import MidPageForm from "@/components/MidPageForm";
 import FAQSection from "@/components/FAQSection";
@@ -28,6 +29,7 @@ export default function Home() {
         <TwoPathsSection />
         <HowItWorks />
         <BancoBrasilSection />
+        <EligibilitySection />
         <MidPageForm />
         <FAQSection />
         <FinalCTA />

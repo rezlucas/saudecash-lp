@@ -3,7 +3,7 @@ import Link from "next/link";
 const procedures = [
   {
     emoji: "💉",
-    title: "Cirurgia Plástica",
+    title: "Cirurgia Eletiva",
     description:
       "Rinoplastia, lipoaspiração, mamoplastia, abdominoplastia, blefaroplastia e outras. Para quem quer se olhar no espelho e reconhecer quem sempre quis ser.",
     tags: ["Rinoplastia", "Lipoaspiração", "Mamoplastia", "Abdominoplastia"],
@@ -27,7 +27,7 @@ const procedures = [
     title: "Cirurgia por Saúde",
     description:
       "Tratamentos que o plano não cobre ou que não podem mais esperar uma fila. Porque saúde não é opcional e a falta de cobertura não deveria ser um obstáculo.",
-    tags: ["Bariátrica", "Ortopedia", "Oftalmologia", "Ginecologia"],
+    tags: ["Urologia", "Ortopedia", "Oftalmologia", "Ginecologia"],
   },
 ];
 

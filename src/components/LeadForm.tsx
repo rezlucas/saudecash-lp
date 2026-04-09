@@ -3,10 +3,10 @@
 import { useState } from "react";
 
 const procedimentos = [
-  "Cirurgia Plástica",
+  "Cirurgia Eletiva",
   "Odontologia",
   "Estética e Harmonização Facial",
-  "Cirurgia Bariátrica",
+  "Urologia",
   "Ortopedia",
   "Oftalmologia",
   "Ginecologia",

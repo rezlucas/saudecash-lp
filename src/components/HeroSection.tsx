@@ -84,7 +84,7 @@ export default function HeroSection() {
             </div>
 
             <p className="mt-4 text-xs text-blue-200">
-              *Crédito sujeito a análise e disponibilidade. Exclusivo para correntistas Banco do Brasil.
+              *Crédito sujeito a análise e disponibilidade. Exclusivo para correntistas Banco do Brasil com acesso à linha de crédito &ldquo;Financiamento de bens e serviços&rdquo;.
             </p>
           </div>
 

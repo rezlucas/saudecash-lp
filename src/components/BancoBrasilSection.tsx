@@ -84,8 +84,7 @@ export default function BancoBrasilSection() {
             </ul>
 
             <p className="text-xs text-blue-300 italic mb-6">
-              *Disponibilidade de crédito sujeita à análise do Banco do Brasil.
-              Exclusivo para correntistas BB.
+              *Disponibilidade de crédito sujeita à análise do Banco do Brasil. Exclusivo para correntistas BB com acesso a linha de crédito &lsquo;Financiar bens e serviços&rsquo;.
             </p>
 
             <Link
