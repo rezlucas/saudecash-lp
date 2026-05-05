@@ -47,7 +47,7 @@ function ImagePlaceholder({
 }
 
 export const metadata: Metadata = {
-  title: "Alinhadores Dental Athena: Financie pelo Banco do Brasil com a SaúdeCash",
+  title: "Dental Athena",
   description:
     "Seu dentista indicou o alinhador Dental Athena. A SaúdeCash financia: R$ 6.000 em até 60x pelo Banco do Brasil. Alinhador removível, com planejamento por simulação digital e resultado previsível antes de começar.",
   keywords: ["alinhadores dental athena", "financiamento alinhador", "alinhador banco do brasil", "saudecash dental", "ortodontia parcelada"],
