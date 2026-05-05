@@ -125,10 +125,10 @@ function HeroDentalAthena() {
               <strong className="text-white">até 60x pelo Banco do Brasil.</strong>
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 items-start">
+            <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href="#formulario-final"
-                className="inline-flex items-center justify-center gap-2 bg-[#FBFB2F] hover:bg-[#E8E800] text-[#003F7A] font-bold text-base px-7 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#FBFB2F] hover:bg-[#E8E800] text-[#003F7A] font-bold text-base px-7 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
@@ -137,7 +137,7 @@ function HeroDentalAthena() {
               </Link>
               <Link
                 href="#como-funciona"
-                className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold text-base px-7 py-4 rounded-xl border border-white/25 transition-all duration-200"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold text-base px-7 py-4 rounded-xl border border-white/25 transition-all duration-200"
               >
                 Como funciona
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
@@ -146,7 +146,30 @@ function HeroDentalAthena() {
               </Link>
             </div>
 
-            <p className="mt-6 text-xs text-blue-200">
+            {/* Imagem em círculo — mobile only */}
+            <div className="md:hidden flex justify-center mt-8">
+              <div className="relative">
+                <div className="absolute inset-0 rounded-full border-[16px] border-[#FBFB2F]/10 -m-4" aria-hidden="true" />
+                <div className="relative w-56 h-56 rounded-full overflow-hidden shadow-2xl border-4 border-white/20">
+                  <Image
+                    src="/images/dental-athena/people-images/girl-with-beautiful-smile-dentist.webp"
+                    alt="Paciente com sorriso perfeito após tratamento com alinhadores Dental Athena"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                    sizes="224px"
+                  />
+                </div>
+                {/* Mini pill flutuante */}
+                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-white rounded-full shadow-lg px-4 py-1.5 flex items-center gap-3 border border-gray-100 whitespace-nowrap">
+                  <span className="text-xs font-black text-[#005FB9]">R$ 6.000</span>
+                  <div className="w-px h-4 bg-gray-200" aria-hidden="true" />
+                  <span className="text-xs font-black text-[#003F7A]">em até 60×</span>
+                </div>
+              </div>
+            </div>
+
+            <p className="mt-8 text-xs text-blue-200">
               *Crédito sujeito a análise. Exclusivo para correntistas BB com linha &ldquo;Financiar bens e serviços&rdquo;.
             </p>
           </div>
@@ -493,7 +516,7 @@ function HowItWorksDental() {
         </div>
 
         <div className="flex justify-center">
-          <Link href="#formulario-final" className="inline-flex items-center gap-2 bg-[#FBFB2F] hover:bg-[#E8E800] text-[#003F7A] font-bold px-8 py-4 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5">
+          <Link href="#formulario-final" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#FBFB2F] hover:bg-[#E8E800] text-[#003F7A] font-bold px-8 py-4 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5">
             Quero saber mais
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
