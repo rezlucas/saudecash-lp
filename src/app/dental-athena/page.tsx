@@ -459,7 +459,7 @@ const steps = [
 function HowItWorksDental() {
   return (
     <section id="como-funciona" className="py-20 bg-[#EFF6FF]" aria-labelledby="how-heading">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <span className="inline-block text-[#005FB9] font-bold text-sm uppercase tracking-widest mb-3">
             Como Funciona
