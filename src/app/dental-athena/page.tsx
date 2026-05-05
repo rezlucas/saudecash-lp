@@ -162,7 +162,7 @@ function HeroDentalAthena() {
             </div>
 
             <p className="mt-8 text-xs text-blue-200">
-              *Crédito sujeito a análise. Exclusivo para correntistas BB com linha &ldquo;Financiar bens e serviços&rdquo;.
+              *Crédito sujeito a análise.<br />Exclusivo para correntistas BB com linha &ldquo;Financiar bens e serviços&rdquo;.
             </p>
           </div>
 
