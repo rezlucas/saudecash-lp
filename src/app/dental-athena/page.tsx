@@ -199,26 +199,13 @@ function HeroDentalAthena() {
                 <p className="text-2xl font-black text-[#003F7A] leading-none">60×</p>
                 <p className="text-[10px] text-[#003F7A] font-medium leading-none mt-0.5">parcelas</p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      {/* ── Barra de stats escura na base (como nas referências) ── */}
-      <div className="relative bg-[#0F172A]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-white/10">
-            {[
-              { value: "R$ 6.000", label: "Valor do alinhador" },
-              { value: "60×",      label: "Parcelas pelo Banco do Brasil" },
-              { value: "À vista",  label: "Também disponível via link SC" },
-              { value: "100%",     label: "Alinhadores personalizados" },
-            ].map((s, i) => (
-              <div key={s.label} className="py-5 px-6">
-                <p className="text-xl font-black text-[#FBFB2F] leading-tight">{s.value}</p>
-                <p className="text-gray-400 text-xs mt-0.5 leading-snug">{s.label}</p>
+              {/* Card flutuante inferior direito — preço */}
+              <div className="absolute -bottom-3 -right-6 bg-white rounded-2xl shadow-xl px-4 py-3 border border-gray-100">
+                <p className="text-[10px] text-gray-400 font-medium leading-none mb-0.5">Valor do alinhador</p>
+                <p className="text-lg font-black text-[#003F7A] leading-tight">R$ 6.000</p>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </div>
