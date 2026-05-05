@@ -288,7 +288,7 @@ const pillars = [
     ),
     title: "Livre de Limitações",
     description: "Remova para comer o que quiser e escovar os dentes sem esforço. Liberdade total na sua rotina.",
-    image: "/images/dental-athena/people-images/porque-dental-athena-1.png",
+    image: "/images/dental-athena/people-images/section-2-01.png",
     imageAlt: "Paciente confortável com alinhadores Dental Athena",
   },
   {
@@ -300,7 +300,7 @@ const pillars = [
     ),
     title: "Ciência do Movimento",
     description: "Segurança garantida por ortodontistas e simulações digitais que aceleram seus resultados.",
-    image: "/images/dental-athena/people-images/porque-dental-athena-2.png",
+    image: "/images/dental-athena/people-images/section-2-02.png",
     imageAlt: "Ortodontista realizando atendimento clínico",
   },
   {
@@ -312,7 +312,7 @@ const pillars = [
     ),
     title: "Ajuste Perfeito",
     description: "Personalização total através de corte automatizado, garantindo que o alinhador se adapte perfeitamente à sua boca.",
-    image: "/images/dental-athena/people-images/porque-dental-athena-3.png",
+    image: "/images/dental-athena/people-images/section-2-03.png",
     imageAlt: "Dentistas trabalhando com precisão no consultório",
   },
   {
@@ -324,7 +324,7 @@ const pillars = [
     ),
     title: "Conforto Imbatível",
     description: "Polímeros de ponta que tornam o uso tão discreto e leve que você até esquece que está usando.",
-    image: "/images/dental-athena/people-images/porque-dental-athena-4.png",
+    image: "/images/dental-athena/people-images/section-2-04.png",
     imageAlt: "Paciente sorrindo com conforto usando alinhadores",
   },
 ];
