@@ -351,7 +351,7 @@ function BenefitsSection() {
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-8 md:gap-x-8 gap-y-0 px-6 lg:px-8">
 
             {/* Foto — alinhada sempre para o lado do texto para gap consistente */}
-            <div className={`${i % 2 !== 0 ? "md:order-2" : ""} py-8`}>
+            <div className={`${i % 2 !== 0 ? "md:order-2" : ""} pt-8 pb-2 md:py-8`}>
               <div className={`relative w-full aspect-square md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-2xl overflow-hidden shadow-md ${i % 2 === 0 ? "md:ml-auto" : "md:mr-auto"}`}>
                 <Image
                   src={pillar.image}
@@ -364,7 +364,7 @@ function BenefitsSection() {
             </div>
 
             {/* Conteúdo — alinhado à direita quando imagem está à direita */}
-            <div className={`flex flex-col justify-center py-8 ${i % 2 !== 0 ? "md:order-1 md:items-end md:text-right" : ""}`}>
+            <div className={`flex flex-col justify-center pt-2 pb-8 md:py-8 ${i % 2 !== 0 ? "md:order-1 md:items-end md:text-right" : ""}`}>
               {/* Ícone + tag */}
               <div className={`flex items-center gap-3 mb-5 ${i % 2 !== 0 ? "md:flex-row-reverse" : ""}`}>
                 <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${i % 2 === 0 ? "bg-white text-gray-400" : "bg-[#EFF6FF] text-[#005FB9]"}`}>
