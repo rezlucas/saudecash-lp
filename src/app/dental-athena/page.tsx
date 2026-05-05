@@ -169,14 +169,14 @@ function HeroDentalAthena() {
           {/* Direita: foto em círculo com cards flutuantes */}
           <div className="hidden md:flex justify-center md:justify-end">
             <div className="relative">
-              <div className="relative w-80 lg:w-96 aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border border-white/20">
+              <div className="relative w-64 lg:w-72 aspect-square rounded-2xl overflow-hidden shadow-2xl border border-white/20">
                 <Image
                   src="/images/dental-athena/people-images/people-hero.webp"
                   alt="Paciente com sorriso perfeito após tratamento com alinhadores Dental Athena"
                   fill
                   className="object-cover object-center"
                   priority
-                  sizes="(max-width: 1024px) 320px, 384px"
+                  sizes="(max-width: 1024px) 256px, 288px"
                 />
               </div>
 
@@ -827,7 +827,6 @@ export default function DentalAthenaPage() {
       <DentalNavbar />
       <main id="main-content">
         <HeroDentalAthena />
-        <TrustBarDental />
         <BenefitsSection />
         <HowItWorksDental />
         <TechnologySection />
