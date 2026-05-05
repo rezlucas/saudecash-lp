@@ -358,11 +358,11 @@ function BenefitsSection() {
 
       {/* Cards alternados */}
       {pillars.map((pillar, i) => (
-        <div key={pillar.title} className={`border-t border-gray-100 ${i % 2 === 0 ? "bg-white" : "bg-[#EFF6FF]"}`}>
+        <div key={pillar.title} className={`border-t border-gray-100 ${i % 2 === 0 ? "bg-[#EFF6FF]" : "bg-white"}`}>
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-0">
 
             {/* Foto — quadrada, menor, radius 16px */}
-            <div className={`flex items-center justify-center p-8 lg:p-12 ${i % 2 !== 0 ? "md:order-2" : ""}`}>
+            <div className={`flex items-center justify-center p-6 lg:p-8 ${i % 2 !== 0 ? "md:order-2" : ""}`}>
               <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-2xl overflow-hidden shadow-md shrink-0">
                 <Image
                   src={pillar.image}
@@ -375,7 +375,7 @@ function BenefitsSection() {
             </div>
 
             {/* Conteúdo — alinhado à direita quando imagem está à direita */}
-            <div className={`flex flex-col justify-center px-8 lg:px-14 py-12 ${i % 2 !== 0 ? "md:order-1 md:items-end md:text-right" : ""}`}>
+            <div className={`flex flex-col justify-center px-6 lg:px-10 py-10 ${i % 2 !== 0 ? "md:order-1 md:items-end md:text-right" : ""}`}>
               {/* Ícone + tag */}
               <div className={`flex items-center gap-3 mb-5 ${i % 2 !== 0 ? "md:flex-row-reverse" : ""}`}>
                 <div className="w-10 h-10 rounded-xl bg-[#EFF6FF] flex items-center justify-center text-[#005FB9] shrink-0">
