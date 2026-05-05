@@ -121,8 +121,7 @@ function HeroDentalAthena() {
             </h1>
 
             <p className="text-lg text-blue-100 leading-relaxed mb-8 max-w-md">
-              O alinhador Dental Athena custa R$ 6.000. Você escolhe: paga à vista pelo link que a SaúdeCash gera, ou parcela em{" "}
-              <strong className="text-white">até 60x pelo Banco do Brasil.</strong>
+              Alinhadores invisíveis com tecnologia de ponta e pagamento facilitado para você começar hoje.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3">
