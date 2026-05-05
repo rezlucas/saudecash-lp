@@ -142,26 +142,22 @@ function HeroDentalAthena() {
               </Link>
             </div>
 
-            {/* Imagem em círculo — mobile only */}
-            <div className="md:hidden flex justify-center mt-8">
-              <div className="relative">
-                <div className="absolute inset-0 rounded-full border-[16px] border-[#FBFB2F]/10 -m-4" aria-hidden="true" />
-                <div className="relative w-56 h-56 rounded-full overflow-hidden shadow-2xl border-4 border-white/20">
-                  <Image
-                    src="/images/dental-athena/people-images/girl-with-beautiful-smile-dentist.webp"
-                    alt="Paciente com sorriso perfeito após tratamento com alinhadores Dental Athena"
-                    fill
-                    className="object-cover object-top"
-                    priority
-                    sizes="224px"
-                  />
-                </div>
-                {/* Mini pill flutuante */}
-                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-white rounded-full shadow-lg px-4 py-1.5 flex items-center gap-3 border border-gray-100 whitespace-nowrap">
-                  <span className="text-xs font-black text-[#005FB9]">R$ 6.000</span>
-                  <div className="w-px h-4 bg-gray-200" aria-hidden="true" />
-                  <span className="text-xs font-black text-[#003F7A]">em até 60×</span>
-                </div>
+            {/* Imagem quadrada — mobile only */}
+            <div className="md:hidden mt-8">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20 aspect-[4/3] w-full">
+                <Image
+                  src="/images/dental-athena/people-images/people-hero.webp"
+                  alt="Paciente com sorriso perfeito após tratamento com alinhadores Dental Athena"
+                  fill
+                  className="object-cover object-center"
+                  priority
+                  sizes="100vw"
+                />
+              </div>
+              <div className="mt-3 bg-white/10 border border-white/20 rounded-xl px-4 py-2 flex items-center justify-center gap-4">
+                <span className="text-sm font-black text-[#FBFB2F]">R$ 6.000</span>
+                <div className="w-px h-4 bg-white/30" aria-hidden="true" />
+                <span className="text-sm font-black text-white">em até 60×</span>
               </div>
             </div>
 
@@ -173,19 +169,14 @@ function HeroDentalAthena() {
           {/* Direita: foto em círculo com cards flutuantes */}
           <div className="hidden md:flex justify-center md:justify-end">
             <div className="relative">
-              {/* Anel decorativo externo */}
-              <div className="absolute inset-0 rounded-full border-[20px] border-[#FBFB2F]/10 -m-5" aria-hidden="true" />
-              {/* Anel médio */}
-              <div className="absolute inset-0 rounded-full border-[8px] border-white/10 -m-2" aria-hidden="true" />
-
-              <div className="relative w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white/20">
+              <div className="relative w-80 lg:w-96 aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border border-white/20">
                 <Image
-                  src="/images/dental-athena/people-images/girl-with-beautiful-smile-dentist.webp"
+                  src="/images/dental-athena/people-images/people-hero.webp"
                   alt="Paciente com sorriso perfeito após tratamento com alinhadores Dental Athena"
                   fill
-                  className="object-cover object-top"
+                  className="object-cover object-center"
                   priority
-                  sizes="(max-width: 1024px) 288px, 320px"
+                  sizes="(max-width: 1024px) 320px, 384px"
                 />
               </div>
 
