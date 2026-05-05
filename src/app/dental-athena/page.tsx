@@ -352,7 +352,7 @@ function BenefitsSection() {
 
             {/* Foto — alinhada sempre para o lado do texto para gap consistente */}
             <div className={`${i % 2 !== 0 ? "md:order-2" : ""} pt-8 pb-2 md:py-8`}>
-              <div className="relative w-full aspect-square rounded-2xl overflow-hidden shadow-md">
+              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-md">
                 <Image
                   src={pillar.image}
                   alt={pillar.imageAlt}
