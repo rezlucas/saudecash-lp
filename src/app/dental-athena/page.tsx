@@ -289,121 +289,111 @@ function TrustBarDental() {
 }
 
 /* ─── Benefits ───────────────────────────────────────────────────────────── */
-// Layout: lista de features horizontais com divisores — sem cards, sem grid de caixas.
-// Muito diferente da grade de cards da LP principal.
+// Layout: 4 cards em layout alternado (texto+foto / foto+texto)
 
 const pillars = [
   {
+    tag: "Alinhadores Dental Athena",
     icon: (
-      // Tag de preço / valor acessível
-      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h.008v.008H6V6z" />
-      </svg>
-    ),
-    title: "Custo-Benefício Único",
-    description: "O equilíbrio perfeito entre alta tecnologia e preço acessível para você conquistar seu sorriso estético.",
-  },
-  {
-    icon: (
-      // Alinhador removível — ícone de dente com seta de remoção
-      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 3c-2.4 0-4.5 1.2-5.4 3.1C5.7 8 5.7 10 6.5 12c.4.9.8 1.8.8 3 0 1.7.8 3 2.7 3 1 0 1.8-.6 2-1.5.2.9 1 1.5 2 1.5 1.9 0 2.7-1.3 2.7-3 0-1.2.4-2.1.8-3 .8-2 .8-4-.1-5.9C16.5 4.2 14.4 3 12 3z" />
       </svg>
     ),
     title: "Livre de Limitações",
     description: "Remova para comer o que quiser e escovar os dentes sem esforço. Liberdade total na sua rotina.",
+    image: "/images/dental-athena/people-images/people-hero.webp",
+    imageAlt: "Paciente confortável com alinhadores Dental Athena",
   },
   {
+    tag: "Validado por ortodontistas",
     icon: (
-      // Escudo com check / validado por ortodontistas
-      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
       </svg>
     ),
     title: "Ciência do Movimento",
     description: "Segurança garantida por ortodontistas e simulações digitais que aceleram seus resultados.",
+    image: "/images/dental-athena/people-images/image-woman-dentist.webp",
+    imageAlt: "Ortodontista realizando atendimento clínico",
   },
   {
+    tag: "Corte automatizado",
     icon: (
-      // Tesoura / corte automatizado do alinhador
-      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" d="M7.848 8.25l1.536.887M7.848 8.25a3 3 0 11-5.196-3 3 3 0 015.196 3zm1.536.887a2.165 2.165 0 011.083 1.839c.005.351.054.695.14 1.024M9.384 9.137l2.077 1.199M7.848 15.75l1.536-.887m-1.536.887a3 3 0 11-5.196 3 3 3 0 015.196-3zm1.536-.887a2.165 2.165 0 001.083-1.838c.005-.352.054-.695.14-1.025m-1.223 2.863l2.077-1.199m0-3.328a4.323 4.323 0 012.068-1.222l5.256-1.399a4.323 4.323 0 012.676.063L21 11.25m-8.539 3.457a4.327 4.327 0 002.068 1.222l5.256 1.399a4.322 4.322 0 002.676-.063L21 12.75" />
       </svg>
     ),
     title: "Ajuste Perfeito",
     description: "Personalização total através de corte automatizado, garantindo que o alinhador se adapte perfeitamente à sua boca.",
+    image: "/images/dental-athena/people-images/male-female-dentists-working-office-together-first-person-view.webp",
+    imageAlt: "Dentistas trabalhando com precisão no consultório",
   },
   {
+    tag: "Polímero premium",
     icon: (
-      // Olho / simulação de resultado
-      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-      </svg>
-    ),
-    title: "Sorriso Previsível",
-    description: "Use a tecnologia a seu favor. Com IA e 3D, você sabe exatamente como será o resultado final antes de começar.",
-  },
-  {
-    icon: (
-      // Alinhador confortável / sparkles
-      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z" />
       </svg>
     ),
     title: "Conforto Imbatível",
     description: "Polímeros de ponta que tornam o uso tão discreto e leve que você até esquece que está usando.",
+    image: "/images/dental-athena/people-images/girl-with-beautiful-smile-dentist.webp",
+    imageAlt: "Paciente sorrindo com conforto usando alinhadores",
   },
 ];
 
 function BenefitsSection() {
   return (
-    <section id="beneficios" className="py-20 bg-white" aria-labelledby="benefits-heading">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="mb-12">
-          <span className="inline-block text-[#005FB9] font-bold text-sm uppercase tracking-widest mb-3">
-            Por que Dental Athena
-          </span>
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
-            <h2 id="benefits-heading" className="text-3xl sm:text-4xl font-black text-[#0F172A] tracking-tight max-w-lg">
-              Alta tecnologia para um{" "}
-              <span className="text-[#005FB9]">sorriso que você já vê antes de começar.</span>
-            </h2>
-            <p className="text-gray-500 text-sm max-w-xs sm:text-right">
-              Conforto, precisão e resultado previsível em cada plaquinha.
-            </p>
-          </div>
-        </div>
+    <section id="beneficios" className="bg-white" aria-labelledby="benefits-heading">
+      {/* Header */}
+      <div className="py-16 text-center max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <span className="inline-block text-[#005FB9] font-bold text-sm uppercase tracking-widest mb-3">
+          Por que Dental Athena
+        </span>
+        <h2 id="benefits-heading" className="text-3xl sm:text-4xl font-black text-[#0F172A] tracking-tight">
+          Alta tecnologia para um{" "}
+          <span className="text-[#005FB9]">sorriso que você já vê antes de começar.</span>
+        </h2>
+      </div>
 
-        {/* Lista horizontal de features — 2 colunas com divisores */}
-        <div className="grid sm:grid-cols-2 gap-x-12">
-          {pillars.map((pillar, i) => (
-            <div
-              key={pillar.title}
-              className={`flex gap-5 py-7 ${i < pillars.length - 2 || (pillars.length % 2 === 0 && i < pillars.length - 2) ? "border-b border-gray-100" : ""}`}
-              style={{ borderBottom: i < pillars.length - 2 ? undefined : i === pillars.length - 2 || i === pillars.length - 1 ? "none" : undefined }}
-            >
-              {/* Ícone com número sobreposto */}
-              <div className="relative shrink-0">
-                <div className="w-14 h-14 rounded-2xl bg-[#EFF6FF] flex items-center justify-center text-[#005FB9]">
+      {/* Cards alternados */}
+      {pillars.map((pillar, i) => (
+        <div key={pillar.title} className={`border-t border-gray-100 ${i % 2 === 0 ? "bg-white" : "bg-[#EFF6FF]"}`}>
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 min-h-[380px]">
+
+            {/* Foto */}
+            <div className={`relative min-h-[260px] md:min-h-full overflow-hidden ${i % 2 !== 0 ? "md:order-2" : ""}`}>
+              <Image
+                src={pillar.image}
+                alt={pillar.imageAlt}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+
+            {/* Conteúdo */}
+            <div className={`flex flex-col justify-center px-8 lg:px-14 py-12 ${i % 2 !== 0 ? "md:order-1" : ""}`}>
+              {/* Ícone + tag */}
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-10 h-10 rounded-xl bg-[#EFF6FF] flex items-center justify-center text-[#005FB9] shrink-0">
                   {pillar.icon}
                 </div>
-                <span className="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-[#005FB9] text-white text-[9px] font-black flex items-center justify-center">
+                <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">{pillar.tag}</span>
+              </div>
+              {/* Número + título */}
+              <div className="flex items-start gap-3 mb-3">
+                <span className="mt-1 text-[10px] font-black text-[#005FB9] bg-blue-50 border border-blue-100 px-2 py-0.5 rounded-full uppercase tracking-widest shrink-0">
                   {String(i + 1).padStart(2, "0")}
                 </span>
+                <h3 className="font-black text-[#0F172A] text-2xl tracking-tight">{pillar.title}</h3>
               </div>
-
-              {/* Texto */}
-              <div className="flex-1 pt-1">
-                <h3 className="font-black text-[#0F172A] text-base mb-1.5 tracking-tight">{pillar.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{pillar.description}</p>
-              </div>
+              <p className="text-gray-500 text-base leading-relaxed max-w-md">{pillar.description}</p>
             </div>
-          ))}
+
+          </div>
         </div>
-      </div>
+      ))}
     </section>
   );
 }
