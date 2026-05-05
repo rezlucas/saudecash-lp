@@ -228,7 +228,7 @@ function HeroDentalAthena() {
               { value: "À vista",  label: "Também disponível via link SC" },
               { value: "100%",     label: "Alinhadores personalizados" },
             ].map((s, i) => (
-              <div key={s.label} className={`py-5 ${i === 0 ? "pr-6" : "px-6"}`}>
+              <div key={s.label} className="py-5 px-6">
                 <p className="text-xl font-black text-[#FBFB2F] leading-tight">{s.value}</p>
                 <p className="text-gray-400 text-xs mt-0.5 leading-snug">{s.label}</p>
               </div>
