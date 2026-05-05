@@ -489,20 +489,7 @@ function HowItWorksDental() {
 
       </div>
 
-      {/* Imagem full-width — fora do container estreito */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative rounded-2xl overflow-hidden aspect-[21/9] shadow-sm border border-blue-100 mt-14 mb-10">
-          <Image
-            src="/images/dental-athena/people-images/image-woman-dentist.webp"
-            alt="Dentista realizando atendimento odontológico no consultório Dental Athena"
-            fill
-            className="object-cover object-center"
-            sizes="(max-width: 768px) 100vw, 80vw"
-          />
-        </div>
-      </div>
-
-      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 mt-14">
 
         <div className="flex justify-center">
           <Link href="#formulario-final" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#FBFB2F] hover:bg-[#E8E800] text-[#003F7A] font-bold px-8 py-4 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5">
