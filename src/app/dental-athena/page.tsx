@@ -612,7 +612,7 @@ function FinancingSection() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-white/10 rounded-2xl overflow-hidden">
             {metrics.map((m) => (
               <div key={m.label} className="bg-[#003F7A] px-6 py-5 text-center">
-                <p className="text-3xl font-black text-[#FBFB2F] mb-1 leading-tight">{m.value}</p>
+                <p className="text-xl font-black text-[#FBFB2F] mb-1 leading-tight">{m.value}</p>
                 <p className="text-xs text-blue-200 font-medium uppercase tracking-wider">{m.label}</p>
               </div>
             ))}
