@@ -577,7 +577,7 @@ function TechnologySection() {
             { value: "22h",        label: "Uso diário recomendado" },
           ].map((s) => (
             <div key={s.label} className="bg-[#0F172A] px-6 py-5 text-center">
-              <p className="text-3xl font-black text-[#FBFB2F] mb-1 leading-tight">{s.value}</p>
+              <p className="text-xl font-black text-[#FBFB2F] mb-1 leading-tight">{s.value}</p>
               <p className="text-xs text-gray-400 font-medium">{s.label}</p>
             </div>
           ))}
