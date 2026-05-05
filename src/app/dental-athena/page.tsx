@@ -287,10 +287,10 @@ function TrustBarDental() {
   return (
     <section className="bg-[#00519D] py-5" aria-label="Diferenciais Dental Athena + SaúdeCash">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <ul className="flex flex-wrap justify-center sm:justify-between gap-3">
+        <ul className="flex flex-col sm:flex-row sm:justify-between gap-3">
           {trustItems.map((item) => (
-            <li key={item.text}>
-              <div className="flex items-center gap-2.5 bg-white/10 border border-white/20 rounded-full px-4 py-2 text-white">
+            <li key={item.text} className="w-full sm:w-auto">
+              <div className="w-full sm:w-auto flex items-center gap-2.5 bg-white/10 border border-white/20 rounded-full px-4 py-2 text-white">
                 <span className="text-[#FBFB2F] shrink-0">{item.icon}</span>
                 <span className="text-xs font-semibold whitespace-nowrap">{item.text}</span>
               </div>
