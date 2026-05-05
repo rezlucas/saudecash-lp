@@ -290,7 +290,7 @@ function TrustBarDental() {
         <ul className="flex flex-col sm:flex-row sm:justify-between gap-3">
           {trustItems.map((item) => (
             <li key={item.text} className="w-full sm:w-auto">
-              <div className="w-full sm:w-auto flex items-center gap-2.5 bg-white/10 border border-white/20 rounded-full px-4 py-2 text-white">
+              <div className="w-full sm:w-auto flex items-center justify-center sm:justify-start gap-2.5 bg-white/10 border border-white/20 rounded-full px-4 py-2 text-white">
                 <span className="text-[#FBFB2F] shrink-0">{item.icon}</span>
                 <span className="text-xs font-semibold whitespace-nowrap">{item.text}</span>
               </div>
