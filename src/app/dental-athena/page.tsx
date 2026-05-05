@@ -169,14 +169,14 @@ function HeroDentalAthena() {
           {/* Direita: foto em círculo com cards flutuantes */}
           <div className="hidden md:flex justify-center md:justify-end">
             <div className="relative">
-              <div className="relative w-64 lg:w-72 aspect-square rounded-2xl overflow-hidden shadow-2xl border border-white/20">
+              <div className="relative w-80 lg:w-96 aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl border border-white/20">
                 <Image
                   src="/images/dental-athena/people-images/people-hero.webp"
                   alt="Paciente com sorriso perfeito após tratamento com alinhadores Dental Athena"
                   fill
                   className="object-cover object-center"
                   priority
-                  sizes="(max-width: 1024px) 256px, 288px"
+                  sizes="(max-width: 1024px) 320px, 384px"
                 />
               </div>
 
@@ -359,17 +359,19 @@ function BenefitsSection() {
       {/* Cards alternados */}
       {pillars.map((pillar, i) => (
         <div key={pillar.title} className={`border-t border-gray-100 ${i % 2 === 0 ? "bg-white" : "bg-[#EFF6FF]"}`}>
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 min-h-[380px]">
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-0">
 
-            {/* Foto */}
-            <div className={`relative min-h-[260px] md:min-h-full overflow-hidden ${i % 2 !== 0 ? "md:order-2" : ""}`}>
-              <Image
-                src={pillar.image}
-                alt={pillar.imageAlt}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
+            {/* Foto — quadrada, menor, radius 16px */}
+            <div className={`flex items-center justify-center p-8 lg:p-12 ${i % 2 !== 0 ? "md:order-2" : ""}`}>
+              <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-2xl overflow-hidden shadow-md shrink-0">
+                <Image
+                  src={pillar.image}
+                  alt={pillar.imageAlt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 256px, 320px"
+                />
+              </div>
             </div>
 
             {/* Conteúdo */}
