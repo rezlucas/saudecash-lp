@@ -380,7 +380,7 @@ function BenefitsSection() {
             <div className={`flex flex-col justify-center py-8 ${i % 2 !== 0 ? "md:order-1 md:items-end md:text-right" : ""}`}>
               {/* Ícone + tag */}
               <div className={`flex items-center gap-3 mb-5 ${i % 2 !== 0 ? "md:flex-row-reverse" : ""}`}>
-                <div className="w-10 h-10 rounded-xl bg-[#EFF6FF] flex items-center justify-center text-[#005FB9] shrink-0">
+                <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${i % 2 === 0 ? "bg-white text-gray-400" : "bg-[#EFF6FF] text-[#005FB9]"}`}>
                   {pillar.icon}
                 </div>
                 <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">{pillar.tag}</span>
