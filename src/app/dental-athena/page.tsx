@@ -301,7 +301,7 @@ const pillars = [
     ),
     title: "Livre de Limitações",
     description: "Remova para comer o que quiser e escovar os dentes sem esforço. Liberdade total na sua rotina.",
-    image: "/images/dental-athena/people-images/people-hero.webp",
+    image: "/images/dental-athena/people-images/porque-dental-athena-1.png",
     imageAlt: "Paciente confortável com alinhadores Dental Athena",
   },
   {
@@ -313,7 +313,7 @@ const pillars = [
     ),
     title: "Ciência do Movimento",
     description: "Segurança garantida por ortodontistas e simulações digitais que aceleram seus resultados.",
-    image: "/images/dental-athena/people-images/image-woman-dentist.webp",
+    image: "/images/dental-athena/people-images/porque-dental-athena-2.png",
     imageAlt: "Ortodontista realizando atendimento clínico",
   },
   {
@@ -325,7 +325,7 @@ const pillars = [
     ),
     title: "Ajuste Perfeito",
     description: "Personalização total através de corte automatizado, garantindo que o alinhador se adapte perfeitamente à sua boca.",
-    image: "/images/dental-athena/people-images/male-female-dentists-working-office-together-first-person-view.webp",
+    image: "/images/dental-athena/people-images/porque-dental-athena-3.png",
     imageAlt: "Dentistas trabalhando com precisão no consultório",
   },
   {
@@ -337,7 +337,7 @@ const pillars = [
     ),
     title: "Conforto Imbatível",
     description: "Polímeros de ponta que tornam o uso tão discreto e leve que você até esquece que está usando.",
-    image: "/images/dental-athena/people-images/girl-with-beautiful-smile-dentist.webp",
+    image: "/images/dental-athena/people-images/porque-dental-athena-4.png",
     imageAlt: "Paciente sorrindo com conforto usando alinhadores",
   },
 ];
@@ -374,23 +374,23 @@ function BenefitsSection() {
               </div>
             </div>
 
-            {/* Conteúdo */}
-            <div className={`flex flex-col justify-center px-8 lg:px-14 py-12 ${i % 2 !== 0 ? "md:order-1" : ""}`}>
+            {/* Conteúdo — alinhado à direita quando imagem está à direita */}
+            <div className={`flex flex-col justify-center px-8 lg:px-14 py-12 ${i % 2 !== 0 ? "md:order-1 md:items-end md:text-right" : ""}`}>
               {/* Ícone + tag */}
-              <div className="flex items-center gap-3 mb-5">
+              <div className={`flex items-center gap-3 mb-5 ${i % 2 !== 0 ? "md:flex-row-reverse" : ""}`}>
                 <div className="w-10 h-10 rounded-xl bg-[#EFF6FF] flex items-center justify-center text-[#005FB9] shrink-0">
                   {pillar.icon}
                 </div>
                 <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">{pillar.tag}</span>
               </div>
               {/* Número + título */}
-              <div className="flex items-start gap-3 mb-3">
+              <div className={`flex items-start gap-3 mb-3 ${i % 2 !== 0 ? "md:flex-row-reverse" : ""}`}>
                 <span className="mt-1 text-[10px] font-black text-[#005FB9] bg-blue-50 border border-blue-100 px-2 py-0.5 rounded-full uppercase tracking-widest shrink-0">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <h3 className="font-black text-[#0F172A] text-2xl tracking-tight">{pillar.title}</h3>
               </div>
-              <p className="text-gray-500 text-base leading-relaxed max-w-md">{pillar.description}</p>
+              <p className={`text-gray-500 text-base leading-relaxed max-w-md ${i % 2 !== 0 ? "md:ml-auto" : ""}`}>{pillar.description}</p>
             </div>
 
           </div>
