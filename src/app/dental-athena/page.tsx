@@ -680,7 +680,7 @@ function FinancingSection() {
               *Disponibilidade de crédito sujeita à análise do Banco do Brasil. Exclusivo para correntistas BB com acesso à linha &lsquo;Financiar bens e serviços&rsquo;.
             </p>
             <Link href="#formulario-final" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#FBFB2F] hover:bg-[#E8E800] text-[#003F7A] font-bold px-7 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-              Simular meu financiamento
+              Falar com um especialista
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
