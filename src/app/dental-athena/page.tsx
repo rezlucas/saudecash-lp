@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import HubSpotForm from "@/components/HubSpotForm";
+import EligibilitySection from "@/components/EligibilitySection";
 import DentalNavbar from "./DentalNavbar";
 import DentalFAQ from "./DentalFAQ";
 
@@ -748,6 +749,7 @@ export default function DentalAthenaPage() {
         <HowItWorksDental />
         <TechnologySection />
         <FinancingSection />
+        <EligibilitySection />
         <DentalFAQ />
         <FinalCTADental />
       </main>
