@@ -651,12 +651,6 @@ function EligibilityDental() {
 
 /* ─── Financing ──────────────────────────────────────────────────────────── */
 
-const metrics = [
-  { value: "R$ 6.000", label: "Valor do alinhador" },
-  { value: "60×",      label: "Parcelas pelo Banco do Brasil" },
-  { value: "À vista",  label: "Pague via link SaúdeCash" },
-  { value: "0%",       label: "Consulta de CPF no formulário" },
-];
 
 const financingBenefits = [
   "Financiamento operado pelo Banco do Brasil, não por uma financeira",
@@ -668,20 +662,6 @@ const financingBenefits = [
 function FinancingSection() {
   return (
     <section id="financiamento" className="py-20 bg-[#003F7A]" aria-labelledby="financing-heading">
-      {/* Faixa de métricas */}
-      <div className="border-b border-white/10 mb-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-white/10 rounded-2xl overflow-hidden">
-            {metrics.map((m) => (
-              <div key={m.label} className="bg-[#003F7A] px-6 py-5 text-center">
-                <p className="text-xl font-black text-[#FBFB2F] mb-1 leading-tight">{m.value}</p>
-                <p className="text-xs text-blue-200 font-medium uppercase tracking-wider">{m.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="flex flex-col gap-5">
