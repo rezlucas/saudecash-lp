@@ -47,12 +47,12 @@ function ImagePlaceholder({
 }
 
 export const metadata: Metadata = {
-  title: "Alinhadores Dental Athena — Financie pelo Banco do Brasil com a SaúdeCash",
+  title: "Alinhadores Dental Athena: Financie pelo Banco do Brasil com a SaúdeCash",
   description:
     "Seu dentista indicou o alinhador Dental Athena. A SaúdeCash financia: R$ 6.000 em até 60x pelo Banco do Brasil. Alinhador removível, com planejamento por simulação digital e resultado previsível antes de começar.",
   keywords: ["alinhadores dental athena", "financiamento alinhador", "alinhador banco do brasil", "saudecash dental", "ortodontia parcelada"],
   openGraph: {
-    title: "Alinhadores Dental Athena — Financie com a SaúdeCash",
+    title: "Alinhadores Dental Athena: Financie com a SaúdeCash",
     description: "R$ 6.000 em até 60x pelo Banco do Brasil. Seu sorriso começa na clínica do seu dentista.",
     type: "website",
     locale: "pt_BR",
@@ -445,7 +445,7 @@ const steps = [
   },
   {
     title: "O BB aprova e você começa o tratamento",
-    description: "Se o crédito for aprovado, o Banco do Brasil te envia um link direto para contratar o financiamento. Contratado — ou pago à vista — é só começar a usar os alinhadores.",
+    description: "Se o crédito for aprovado, o Banco do Brasil te envia um link direto para contratar o financiamento. Contratado, ou pago à vista, é só começar a usar os alinhadores.",
     tag: "Transformação real",
     icon: (
       // Dente / sorriso
@@ -544,7 +544,7 @@ function TechnologySection() {
             <span className="text-[#FBFB2F]">antes mesmo de começar.</span>
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Com simulação digital e corte automatizado, o alinhador é planejado para o seu caso — e o resultado final não é surpresa.
+            Com simulação digital e corte automatizado, o alinhador é planejado para o seu caso, e o resultado final não é surpresa.
           </p>
         </div>
 
@@ -759,7 +759,7 @@ function FinancingSection() {
               <span className="text-[#FBFB2F] whitespace-nowrap">sair do seu bolso de uma vez.</span>
             </h2>
             <p className="text-blue-100 text-base leading-relaxed mb-8">
-              O financiamento do alinhador é operado diretamente pelo Banco do Brasil. A clínica credenciada Dental Athena lança a proposta pela plataforma da SaúdeCash, o BB analisa e, se aprovado, te manda um link para contratar — sem sair de casa. Prefere pagar à vista? A SaúdeCash também gera o link de pagamento para você.
+              O financiamento do alinhador é operado diretamente pelo Banco do Brasil. A clínica credenciada Dental Athena lança a proposta pela plataforma da SaúdeCash, o BB analisa e, se aprovado, te manda um link para contratar, sem sair de casa. Prefere pagar à vista? A SaúdeCash também gera o link de pagamento para você.
             </p>
             <ul className="flex flex-col gap-0 mb-8 divide-y divide-white/10">
               {financingBenefits.map((benefit) => (

@@ -11,12 +11,12 @@ const faqs = [
   {
     question: "Quanto custa o alinhador Dental Athena?",
     answer:
-      "O valor é R$ 6.000. Você pode pagar à vista — a SaúdeCash gera um link de pagamento — ou financiar em até 60 meses pelo Banco do Brasil, com as condições e taxas do BB.",
+      "O valor é R$ 6.000. Você pode pagar à vista, a SaúdeCash gera um link de pagamento, ou financiar em até 60 meses pelo Banco do Brasil, com as condições e taxas do BB.",
   },
   {
     question: "Como funciona o financiamento pelo Banco do Brasil?",
     answer:
-      "A clínica credenciada Dental Athena lança a proposta de R$ 6.000 pela plataforma da SaúdeCash. A SaúdeCash encaminha ao Banco do Brasil, que analisa seu crédito. Se aprovado, o BB te envia um link direto para contratar o financiamento — tudo sem sair de casa.",
+      "A clínica credenciada Dental Athena lança a proposta de R$ 6.000 pela plataforma da SaúdeCash. A SaúdeCash encaminha ao Banco do Brasil, que analisa seu crédito. Se aprovado, o BB te envia um link direto para contratar o financiamento, tudo sem sair de casa.",
   },
   {
     question: "Preciso ter conta no Banco do Brasil para financiar?",
@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "Como funciona a simulação do resultado antes de começar?",
     answer:
-      "Com o uso de simulação digital, o orthodontista consegue planejar todo o tratamento e mostrar como seu sorriso vai ficar ao final. Você aprova o resultado esperado antes de colocar a primeira plaquinha — sem surpresas.",
+      "Com o uso de simulação digital, o ortodontista consegue planejar todo o tratamento e mostrar como seu sorriso vai ficar ao final. Você aprova o resultado esperado antes de colocar a primeira plaquinha, sem surpresas.",
   },
   {
     question: "O alinhador é fabricado pela Dental Athena?",
