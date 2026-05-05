@@ -361,23 +361,23 @@ function BenefitsSection() {
       {/* Cards alternados */}
       {pillars.map((pillar, i) => (
         <div key={pillar.title} className={`border-t border-gray-100 ${i % 2 === 0 ? "bg-[#EFF6FF]" : "bg-white"}`}>
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-0">
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-8 md:gap-x-8 gap-y-0 px-6 lg:px-8">
 
-            {/* Foto — quadrada, menor, radius 16px */}
-            <div className={`flex items-center justify-center p-6 lg:p-8 ${i % 2 !== 0 ? "md:order-2" : ""}`}>
-              <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-2xl overflow-hidden shadow-md shrink-0">
+            {/* Foto — 100% largura no mobile, quadrada no desktop */}
+            <div className={`${i % 2 !== 0 ? "md:order-2" : ""} py-8`}>
+              <div className="relative w-full aspect-square md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-2xl overflow-hidden shadow-md">
                 <Image
                   src={pillar.image}
                   alt={pillar.imageAlt}
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 256px, 320px"
+                  sizes="(max-width: 768px) 100vw, 320px"
                 />
               </div>
             </div>
 
             {/* Conteúdo — alinhado à direita quando imagem está à direita */}
-            <div className={`flex flex-col justify-center px-6 lg:px-10 py-10 ${i % 2 !== 0 ? "md:order-1 md:items-end md:text-right" : ""}`}>
+            <div className={`flex flex-col justify-center py-8 ${i % 2 !== 0 ? "md:order-1 md:items-end md:text-right" : ""}`}>
               {/* Ícone + tag */}
               <div className={`flex items-center gap-3 mb-5 ${i % 2 !== 0 ? "md:flex-row-reverse" : ""}`}>
                 <div className="w-10 h-10 rounded-xl bg-[#EFF6FF] flex items-center justify-center text-[#005FB9] shrink-0">
