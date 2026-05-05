@@ -346,14 +346,16 @@ function BenefitsSection() {
   return (
     <section id="beneficios" className="bg-white" aria-labelledby="benefits-heading">
       {/* Header */}
-      <div className="py-16 text-center max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <span className="inline-block text-[#005FB9] font-bold text-sm uppercase tracking-widest mb-3">
-          Por que Dental Athena
-        </span>
-        <h2 id="benefits-heading" className="text-3xl sm:text-4xl font-black text-[#0F172A] tracking-tight">
-          Alta tecnologia para um{" "}
-          <span className="text-[#005FB9]">sorriso que você já vê antes de começar.</span>
-        </h2>
+      <div className="bg-[#EFF6FF] py-16 text-center">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <span className="inline-block text-[#005FB9] font-bold text-sm uppercase tracking-widest mb-3">
+            Por que Dental Athena
+          </span>
+          <h2 id="benefits-heading" className="text-3xl sm:text-4xl font-black text-[#0F172A] tracking-tight">
+            Alta tecnologia para um{" "}
+            <span className="text-[#005FB9]">sorriso que você já vê antes de começar.</span>
+          </h2>
+        </div>
       </div>
 
       {/* Cards alternados */}
