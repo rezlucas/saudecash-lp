@@ -90,7 +90,7 @@ export default function DentalFAQ() {
   return (
     <section
       id="faq"
-      className="py-20 bg-gray-50"
+      className="py-20 scroll-mt-20 bg-gray-50"
       aria-labelledby="faq-heading"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

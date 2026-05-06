@@ -406,7 +406,7 @@ const steps = [
   },
   {
     title: "A clínica gera a proposta via SaúdeCash",
-    description: "A clínica lança a proposta de R$ 6.000 pela plataforma da SaúdeCash. Se você optar pelo financiamento, a SaúdeCash encaminha ao Banco do Brasil para análise de crédito.",
+    description: "A clínica lança a proposta pela plataforma da SaúdeCash. Se você optar pelo financiamento, a SaúdeCash encaminha ao Banco do Brasil para análise de crédito.",
     tag: "Rápido e digital",
     icon: (
       // Plataforma / proposta
