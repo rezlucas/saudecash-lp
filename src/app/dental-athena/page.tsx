@@ -737,7 +737,7 @@ function FinancingSection() {
 
 function FinalCTADental() {
   return (
-    <section className="pt-16 md:pt-28 pb-20 bg-[#005FB9] relative overflow-hidden" aria-labelledby="final-cta-heading">
+    <section className="pt-28 pb-20 bg-[#005FB9] relative overflow-hidden" aria-labelledby="final-cta-heading">
       <svg className="absolute inset-0 w-full h-full opacity-[0.06]" aria-hidden="true">
         <defs>
           <pattern id="cta-stripes" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
