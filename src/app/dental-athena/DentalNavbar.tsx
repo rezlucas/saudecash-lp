@@ -33,7 +33,7 @@ export default function DentalNavbar() {
           </Link>
           <div className="hidden sm:flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-full px-3 py-1">
             <span className="text-xs font-semibold text-gray-500">em parceria com</span>
-            <span className="text-xs font-black text-[#005FB9]">Dental Athena</span>
+            <span className="text-xs font-black text-[#005FB9]">KG Aligncare</span>
           </div>
         </div>
 

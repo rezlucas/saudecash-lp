@@ -6,17 +6,17 @@ const faqs = [
   {
     question: "Posso comprar o alinhador sem passar por um dentista?",
     answer:
-      "Não. O alinhador Dental Athena só é oferecido mediante indicação de um dentista credenciado pela Dental Athena. É o dentista que avalia se o alinhador é adequado para o seu caso durante a consulta.",
+      "Não. O alinhador KG Aligncare só é oferecido mediante indicação de um dentista credenciado pela Rede KG Aligncare SaúdeCash. É o dentista que avalia se o alinhador é adequado para o seu caso durante a consulta.",
   },
   {
-    question: "Quanto custa o alinhador Dental Athena?",
+    question: "Quanto custa o alinhador KG Aligncare?",
     answer:
       "O valor é R$ 6.000. Você pode pagar à vista, a SaúdeCash gera um link de pagamento, ou financiar em até 60 meses pelo Banco do Brasil, com as condições e taxas do BB.",
   },
   {
     question: "Como funciona o financiamento pelo Banco do Brasil?",
     answer:
-      "A clínica credenciada Dental Athena lança a proposta de R$ 6.000 pela plataforma da SaúdeCash. A SaúdeCash encaminha ao Banco do Brasil, que analisa seu crédito. Se aprovado, o BB te envia um link direto para contratar o financiamento, tudo sem sair de casa.",
+      "A clínica credenciada Rede KG Aligncare SaúdeCash lança a proposta de R$ 6.000 pela plataforma da SaúdeCash. A SaúdeCash encaminha ao Banco do Brasil, que analisa seu crédito. Se aprovado, o BB te envia um link direto para contratar o financiamento, tudo sem sair de casa.",
   },
   {
     question: "Preciso ter conta no Banco do Brasil para financiar?",
@@ -34,14 +34,14 @@ const faqs = [
       "Com o uso de simulação digital, o ortodontista consegue planejar todo o tratamento e mostrar como seu sorriso vai ficar ao final. Você aprova o resultado esperado antes de colocar a primeira plaquinha, sem surpresas.",
   },
   {
-    question: "O alinhador é fabricado pela Dental Athena?",
+    question: "De quem é o produto KG Aligncare?",
     answer:
-      "Não. O produto é fabricado por um fornecedor especializado, mas é comercializado exclusivamente através das clínicas credenciadas pela Dental Athena, via SaúdeCash. Isso garante controle de qualidade e a intermediação do financiamento.",
+      "O Aligncare é um produto da KG Sorensen, reconhecida como líder no mercado de produtos odontológicos, destaca-se por fabricar produtos de alta qualidade e por estabelecer laços sólidos e significativos com os principais profissionais da área da odontologia em todo o mundo. Saiba mais em aligncare.com.br.",
   },
   {
-    question: "Como encontro uma clínica credenciada Dental Athena?",
+    question: "Como encontro uma clínica credenciada Rede KG Aligncare SaúdeCash Dental?",
     answer:
-      "Preencha o formulário nesta página. Nossa equipe entra em contato e te indica a clínica mais próxima de você que faz parte da rede credenciada Dental Athena.",
+      "Preencha o formulário nesta página. Nossa equipe entra em contato e te indica a clínica mais próxima de você que faz parte da Rede KG Aligncare SaúdeCash.",
   },
   {
     question: "Quando o tratamento começa após a aprovação do crédito?",
@@ -108,7 +108,7 @@ export default function DentalFAQ() {
               <span className="text-[#005FB9]">talvez isso responda.</span>
             </h2>
             <p className="text-gray-600 text-base mb-8">
-              Tudo sobre o processo de compra e financiamento dos alinhadores Dental Athena via SaúdeCash.
+              Tudo sobre o processo de compra e financiamento dos alinhadores KG Aligncare via SaúdeCash.
             </p>
 
             <div className="bg-[#005FB9] rounded-2xl p-6 text-white">

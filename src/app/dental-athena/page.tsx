@@ -47,13 +47,13 @@ function ImagePlaceholder({
 }
 
 export const metadata: Metadata = {
-  title: "Dental Athena",
+  title: "KG Aligncare",
   description:
-    "Seu dentista indicou o alinhador Dental Athena. A SaúdeCash financia: R$ 6.000 em até 60x pelo Banco do Brasil. Alinhador removível, com planejamento por simulação digital e resultado previsível antes de começar.",
-  keywords: ["alinhadores dental athena", "financiamento alinhador", "alinhador banco do brasil", "saudecash dental", "ortodontia parcelada"],
+    "O dentista indicou o alinhador KG Aligncare. A SaúdeCash financia: R$ 6.000 em até 60x pelo Banco do Brasil. Alinhador removível, com planejamento por simulação digital e resultado previsível antes de começar.",
+  keywords: ["alinhadores kg aligncare", "financiamento alinhador", "alinhador banco do brasil", "saudecash dental", "ortodontia parcelada"],
   openGraph: {
-    title: "Alinhadores Dental Athena: Financie com a SaúdeCash",
-    description: "R$ 6.000 em até 60x pelo Banco do Brasil. Seu sorriso começa na clínica do seu dentista.",
+    title: "Alinhadores KG Aligncare: Financie com a SaúdeCash",
+    description: "R$ 6.000 em até 60x pelo Banco do Brasil. Seu sorriso começa na clínica do dentista.",
     type: "website",
     locale: "pt_BR",
     siteName: "SaúdeCash",
@@ -109,12 +109,12 @@ function HeroDentalAthena() {
               <div className="w-1 h-7 rounded-full bg-[#FBFB2F]" aria-hidden="true" />
               <div>
                 <p className="text-[10px] font-bold uppercase tracking-widest text-[#FBFB2F]">Parceria exclusiva</p>
-                <p className="text-sm font-semibold text-white leading-tight">Dental Athena × SaúdeCash</p>
+                <p className="text-sm font-semibold text-white leading-tight">KG Aligncare × SaúdeCash</p>
               </div>
             </div>
 
             <h1 id="hero-heading" className="text-3xl sm:text-4xl lg:text-5xl font-black leading-[1.15] tracking-tight mb-6">
-              Seu dentista indicou.{" "}
+              O dentista indicou.{" "}
               <span className="text-[#FBFB2F] whitespace-nowrap">A SaúdeCash financia.</span>
               <br />
               <span className="whitespace-nowrap">Seu sorriso começa agora.</span>
@@ -147,7 +147,7 @@ function HeroDentalAthena() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20 w-full" style={{aspectRatio: "732/1007"}}>
                 <Image
                   src="/images/dental-athena/people-images/people-hero.png"
-                  alt="Paciente com sorriso perfeito após tratamento com alinhadores Dental Athena"
+                  alt="Paciente com sorriso perfeito após tratamento com alinhadores KG Aligncare"
                   fill
                   className="object-cover object-top"
                   priority
@@ -172,7 +172,7 @@ function HeroDentalAthena() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20" style={{width: "clamp(280px, 40vw, 380px)", aspectRatio: "732/1007"}}>
                 <Image
                   src="/images/dental-athena/people-images/people-hero.png"
-                  alt="Paciente com sorriso perfeito após tratamento com alinhadores Dental Athena"
+                  alt="Paciente com sorriso perfeito após tratamento com alinhadores KG Aligncare"
                   fill
                   className="object-cover object-top"
                   priority
@@ -258,7 +258,7 @@ const trustItems = [
 
 function TrustBarDental() {
   return (
-    <section className="bg-[#00519D] py-5" aria-label="Diferenciais Dental Athena + SaúdeCash">
+    <section className="bg-[#00519D] py-5" aria-label="Diferenciais KG Aligncare + SaúdeCash">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <ul className="flex flex-col sm:flex-row sm:justify-between gap-3">
           {trustItems.map((item) => (
@@ -280,7 +280,7 @@ function TrustBarDental() {
 
 const pillars = [
   {
-    tag: "Alinhadores Dental Athena",
+    tag: "Alinhadores KG Aligncare",
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} aria-hidden="true">
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 3c-2.4 0-4.5 1.2-5.4 3.1C5.7 8 5.7 10 6.5 12c.4.9.8 1.8.8 3 0 1.7.8 3 2.7 3 1 0 1.8-.6 2-1.5.2.9 1 1.5 2 1.5 1.9 0 2.7-1.3 2.7-3 0-1.2.4-2.1.8-3 .8-2 .8-4-.1-5.9C16.5 4.2 14.4 3 12 3z" />
@@ -289,7 +289,7 @@ const pillars = [
     title: "Livre de Limitações",
     description: "Remova para comer o que quiser e escovar os dentes sem esforço. Liberdade total na sua rotina.",
     image: "/images/dental-athena/people-images/section-2-01.png",
-    imageAlt: "Paciente confortável com alinhadores Dental Athena",
+    imageAlt: "Paciente confortável com alinhadores KG Aligncare",
   },
   {
     tag: "Validado por ortodontistas",
@@ -311,7 +311,7 @@ const pillars = [
       </svg>
     ),
     title: "Ajuste Perfeito",
-    description: "Personalização total através de corte automatizado, garantindo que o alinhador se adapte perfeitamente à sua boca.",
+    description: "Personalização total através de corte automatizado, garantindo que o alinhador se adapte perfeitamente aos seus dentes.",
     image: "/images/dental-athena/people-images/section-2-03.png",
     imageAlt: "Dentistas trabalhando com precisão no consultório",
   },
@@ -336,7 +336,7 @@ function BenefitsSection() {
       <div className="bg-[#EFF6FF] py-16 text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <span className="inline-block text-[#005FB9] font-bold text-sm uppercase tracking-widest mb-3">
-            Por que Dental Athena
+            Por que KG Aligncare
           </span>
           <h2 id="benefits-heading" className="text-3xl sm:text-4xl font-black text-[#0F172A] tracking-tight">
             Alta tecnologia para um{" "}
@@ -394,8 +394,8 @@ function BenefitsSection() {
 
 const steps = [
   {
-    title: "Seu dentista indica o alinhador",
-    description: "Na sua consulta em uma clínica credenciada pela Dental Athena, o dentista avalia seu caso e indica o alinhador. A partir daí, você decide como quer pagar.",
+    title: "O dentista indica o alinhador",
+    description: "Na sua consulta em uma clínica credenciada pela Rede KG Aligncare SaúdeCash, o dentista avalia seu caso e indica o alinhador. A partir daí, você decide como quer pagar.",
     tag: "Na clínica",
     icon: (
       // Dentista / pessoa
@@ -494,9 +494,9 @@ function HowItWorksDental() {
 /* ─── Technology Gallery ─────────────────────────────────────────────────── */
 
 const galleryItems = [
-  { src: "/images/dental-athena/gifs/Gif%204%20.gif", alt: "Simulação do movimento dentário com alinhador Dental Athena", caption: "Simulação digital", sub: "Veja o tratamento completo antes de colocar a primeira plaquinha" },
-  { src: "/images/dental-athena/gifs/Gif%201.gif",    alt: "Corte automatizado do alinhador Dental Athena",              caption: "Corte automatizado", sub: "Precisão que garante encaixe perfeito para cada boca" },
-  { src: "/images/dental-athena/gifs/Gif%203.gif",    alt: "Resultado com alinhador Dental Athena",                       caption: "Resultado com IA e 3D", sub: "Você sabe exatamente onde vai chegar antes de começar" },
+  { src: "/images/dental-athena/gifs/Gif%204%20.gif", alt: "Simulação do movimento dentário com alinhador KG Aligncare", caption: "Simulação digital", sub: "Veja o tratamento completo antes de colocar a primeira plaquinha" },
+  { src: "/images/dental-athena/gifs/Gif%201.gif",    alt: "Corte automatizado do alinhador KG Aligncare",              caption: "Corte automatizado", sub: "Precisão que garante encaixe perfeito para cada boca" },
+  { src: "/images/dental-athena/gifs/Gif%203.gif",    alt: "Resultado com alinhador KG Aligncare",                       caption: "Resultado com IA e 3D", sub: "Você sabe exatamente onde vai chegar antes de começar" },
 ];
 
 function TechnologySection() {
@@ -679,7 +679,7 @@ function FinancingSection() {
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-xl">
               <Image
                 src="/images/dental-athena/people-images/male-female-dentists-working-office-together-first-person-view.webp"
-                alt="Dentistas trabalhando juntos no consultório da Dental Athena"
+                alt="Dentistas trabalhando juntos no consultório da Rede KG Aligncare SaúdeCash"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 40vw"
@@ -705,7 +705,7 @@ function FinancingSection() {
               <span className="text-[#FBFB2F] whitespace-nowrap">sair do seu bolso de uma vez.</span>
             </h2>
             <p className="text-blue-100 text-base leading-relaxed mb-8">
-              O financiamento do alinhador é operado diretamente pelo Banco do Brasil. A clínica credenciada Dental Athena lança a proposta pela plataforma da SaúdeCash, o BB analisa e, se aprovado, te manda um link para contratar, sem sair de casa. Prefere pagar à vista? A SaúdeCash também gera o link de pagamento para você.
+              O financiamento do alinhador é operado diretamente pelo Banco do Brasil. A clínica credenciada Rede KG Aligncare SaúdeCash lança a proposta pela plataforma da SaúdeCash, o BB analisa e, se aprovado, te manda um link para contratar, sem sair de casa. Prefere pagar à vista? A SaúdeCash também gera o link de pagamento para você.
             </p>
             <ul className="flex flex-col gap-0 mb-8 divide-y divide-white/10">
               {financingBenefits.map((benefit) => (
@@ -720,12 +720,12 @@ function FinancingSection() {
             <p className="text-xs text-blue-300 italic mb-6">
               *Disponibilidade de crédito sujeita à análise do Banco do Brasil. Exclusivo para correntistas BB com acesso à linha &lsquo;Financiar bens e serviços&rsquo;.
             </p>
-            <Link href="#formulario-final" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#FBFB2F] hover:bg-[#E8E800] text-[#003F7A] font-bold px-7 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+            <a href="#formulario-final" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#FBFB2F] hover:bg-[#E8E800] text-[#003F7A] font-bold px-7 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
               Falar com um especialista
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
@@ -758,10 +758,10 @@ function FinalCTADental() {
             <span className="text-[#FBFB2F] whitespace-nowrap">financiar ou pagar?</span>
           </h2>
           <p className="text-blue-100 text-lg leading-relaxed max-w-xl mx-auto">
-            Preencha o formulário. Nossa equipe entra em contato, te explica o processo e te ajuda a encontrar a clínica Dental Athena mais próxima de você.
+            Preencha o formulário. Nossa equipe entra em contato, te explica o processo e te ajuda a encontrar a clínica Rede KG Aligncare SaúdeCash mais próxima de você.
           </p>
         </div>
-        <div id="formulario-final" className="bg-white rounded-3xl shadow-2xl overflow-hidden border-t-4 border-[#FBFB2F]">
+        <div id="formulario-final" className="bg-white rounded-3xl shadow-2xl overflow-hidden border-t-4 border-[#FBFB2F] scroll-mt-20">
           <div className="p-0 sm:p-10">
             <HubSpotForm />
           </div>
