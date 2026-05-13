@@ -113,12 +113,25 @@ function HeroDentalAthena() {
               </div>
             </div>
 
-            <h1 id="hero-heading" className="text-3xl sm:text-4xl lg:text-5xl font-black leading-[1.15] tracking-tight mb-6">
-              O dentista indicou.{" "}
-              <span className="text-[#FBFB2F] whitespace-nowrap">A SaúdeCash financia.</span>
+            <h1 id="hero-heading" className="text-2xl sm:text-4xl lg:text-4xl font-black leading-[1.2] tracking-tight mb-6">
+              O dentista indicou.
               <br />
-              <span className="whitespace-nowrap">Seu sorriso começa agora.</span>
+              <span className="text-[#FBFB2F]">A SaúdeCash financia.</span>
+              <br />
+              <span className="sm:whitespace-nowrap">Seu sorriso começa agora.</span>
             </h1>
+
+            <div className="flex items-center gap-0 mb-8 w-fit bg-white/10 border border-white/20 rounded-xl overflow-hidden">
+              <div className="flex flex-col px-3 py-1.5 sm:px-5 sm:py-3">
+                <span className="text-[#FBFB2F] font-black text-base sm:text-xl leading-none">R$ 6.000</span>
+                <span className="text-blue-200 text-[10px] sm:text-[11px] font-medium mt-0.5 sm:mt-1">valor do alinhador</span>
+              </div>
+              <div className="w-px self-stretch bg-white/20" aria-hidden="true" />
+              <div className="flex flex-col px-3 py-1.5 sm:px-5 sm:py-3">
+                <span className="text-white font-black text-base sm:text-xl leading-none">60×</span>
+                <span className="text-blue-200 text-[10px] sm:text-[11px] font-medium mt-0.5 sm:mt-1">parcelas no BB</span>
+              </div>
+            </div>
 
             <p className="text-lg text-blue-100 leading-relaxed mb-8 max-w-md">
               Alinhadores invisíveis com tecnologia de ponta e pagamento facilitado para você começar hoje.
@@ -142,9 +155,9 @@ function HeroDentalAthena() {
               </Link>
             </div>
 
-            {/* Imagem quadrada — mobile only */}
+            {/* Imagem — mobile only */}
             <div className="md:hidden mt-8">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20 w-full" style={{aspectRatio: "732/1007"}}>
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20 w-full" style={{aspectRatio: "3/4"}}>
                 <Image
                   src="/images/dental-athena/people-images/people-hero.png"
                   alt="Paciente com sorriso perfeito após tratamento com alinhadores KG Aligncare"
@@ -153,11 +166,6 @@ function HeroDentalAthena() {
                   priority
                   sizes="100vw"
                 />
-              </div>
-              <div className="mt-3 bg-white/10 border border-white/20 rounded-xl px-4 py-2 flex items-center justify-center gap-4">
-                <span className="text-sm font-black text-[#FBFB2F]">R$ 6.000</span>
-                <div className="w-px h-4 bg-white/30" aria-hidden="true" />
-                <span className="text-sm font-black text-white">em até 60×</span>
               </div>
             </div>
 
@@ -431,20 +439,21 @@ const steps = [
 function HowItWorksDental() {
   return (
     <section id="como-funciona" className="py-20 bg-[#EFF6FF]" aria-labelledby="how-heading">
-      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
-          <span className="inline-block text-[#005FB9] font-bold text-sm uppercase tracking-widest mb-3">
-            Como Funciona
-          </span>
-          <h2 id="how-heading" className="text-3xl sm:text-4xl font-black text-[#0F172A] mb-4 tracking-tight">
-            Do consultório ao sorriso novo.{" "}
-            <span className="text-[#005FB9]">Mais simples do que parece.</span>
-          </h2>
-          <p className="text-lg text-gray-500 max-w-xl mx-auto">
-            O processo começa com o seu dentista e a SaúdeCash cuida do resto.
-          </p>
-        </div>
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-14">
+        <span className="inline-block text-[#005FB9] font-bold text-sm uppercase tracking-widest mb-3">
+          Como Funciona
+        </span>
+        <h2 id="how-heading" className="text-2xl sm:text-4xl font-black text-[#0F172A] mb-4 tracking-tight">
+          Do consultório ao sorriso novo.
+          <br />
+          <span className="text-[#005FB9]">Mais simples do que parece.</span>
+        </h2>
+        <p className="text-lg text-gray-500">
+          O processo começa com o seu dentista e a SaúdeCash cuida do resto.
+        </p>
+      </div>
 
+      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-0">
           {steps.map((step, i) => (
             <div key={step.title} className="relative flex gap-6 md:gap-10">
@@ -753,7 +762,7 @@ function FinalCTADental() {
           <span className="inline-block text-[#FBFB2F] font-bold text-sm uppercase tracking-widest mb-4">
             É rápido e sem compromisso
           </span>
-          <h2 id="final-cta-heading" className="text-4xl sm:text-5xl font-black text-white leading-tight tracking-tight mb-4">
+          <h2 id="final-cta-heading" className="text-2xl sm:text-4xl font-black text-white leading-tight tracking-tight mb-4">
             Tem dúvida sobre como{" "}
             <span className="text-[#FBFB2F] whitespace-nowrap">financiar ou pagar?</span>
           </h2>
