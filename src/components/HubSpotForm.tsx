@@ -2,7 +2,11 @@
 
 import Script from "next/script";
 
-export default function HubSpotForm() {
+export default function HubSpotForm({
+  formId = "fb7c9ff8-ab5e-472e-89b2-7bf78127767b",
+}: {
+  formId?: string;
+}) {
   return (
     <>
       <Script
@@ -12,7 +16,7 @@ export default function HubSpotForm() {
       <div
         className="hs-form-frame"
         data-region="na1"
-        data-form-id="fb7c9ff8-ab5e-472e-89b2-7bf78127767b"
+        data-form-id={formId}
         data-portal-id="50999563"
       />
     </>
