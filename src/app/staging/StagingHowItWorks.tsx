@@ -5,6 +5,7 @@ const steps = [
   {
     icon: ClipboardList,
     title: "Você preenche o formulário",
+    requirements: ["Ser correntista do Banco do Brasil", "Já ter feito a consulta"],
     description:
       "Nome, WhatsApp, o procedimento que você quer realizar e a confirmação de que é correntista do Banco do Brasil. Leva menos de 1 minuto, sem consulta de CPF e sem nenhum compromisso.",
   },
@@ -59,7 +60,7 @@ export default function StagingHowItWorks() {
             return (
               <li
                 key={step.title}
-                className="flex gap-4 sm:gap-6 min-h-[370px] sm:min-h-[245px]"
+                className="flex gap-4 sm:gap-6 sm:min-h-[300px]"
               >
                 <div
                   className={`relative flex flex-col items-center shrink-0 w-24 sm:w-28 ${
@@ -89,6 +90,31 @@ export default function StagingHowItWorks() {
                   <span className="inline-block text-[#005FB9] font-bold text-xs uppercase tracking-widest mb-2">
                     Etapa {i + 1}
                   </span>
+                  {step.requirements && (
+                    <div className="mb-2 flex flex-col gap-1 rounded-lg border border-blue-100 bg-blue-50 px-3 py-2">
+                      <span className="text-[11px] font-bold uppercase tracking-wide text-[#005FB9]/70 mb-0.5">
+                        Pré-requisitos
+                      </span>
+                      {step.requirements.map((req) => (
+                        <span
+                          key={req}
+                          className="flex items-center gap-1.5 text-xs font-semibold text-[#005FB9]"
+                        >
+                          <svg
+                            className="w-3.5 h-3.5 shrink-0"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={3}
+                            aria-hidden="true"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                          </svg>
+                          {req}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                   <h3 className="font-bold text-lg sm:text-xl text-[#0F172A] mb-2">
                     {step.title}
                   </h3>
