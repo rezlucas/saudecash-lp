@@ -13,8 +13,9 @@ const procedures = [
     icon: Smile,
     title: "Odontologia",
     description:
-      "Implantes, próteses, aparelhos, facetas. Um sorriso diferente muda postura, presença, autoconfiança, e não precisa ficar para depois.",
+      "Implantes, próteses, aparelhos, alinhadores invisíveis, facetas. Um sorriso diferente muda postura, presença, autoconfiança, e não precisa ficar para depois.",
     tags: ["Implantes", "Facetas", "Aparelhos", "Próteses"],
+    featuredTag: "Alinhadores Invisíveis",
   },
   {
     icon: Sparkles,
@@ -78,6 +79,11 @@ export default function StagingProceduresSection() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-1.5 mt-auto">
+                {proc.featuredTag && (
+                  <span className="text-xs font-medium bg-[#FBFB2F] text-[#003F7A] px-2.5 py-1 rounded-full">
+                    {proc.featuredTag}
+                  </span>
+                )}
                 {proc.tags.map((tag) => (
                   <span
                     key={tag}
