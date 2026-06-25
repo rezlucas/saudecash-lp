@@ -1,11 +1,9 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import TrustBar from "@/components/TrustBar";
-import TwoPathsSection from "@/components/TwoPathsSection";
 import HowItWorks from "@/components/HowItWorks";
-import BancoBrasilSection from "@/components/BancoBrasilSection";
-import EligibilitySection from "@/components/EligibilitySection";
 import ProceduresSection from "@/components/ProceduresSection";
+import MobileCTA from "@/components/MobileCTA";
 import MidPageForm from "@/components/MidPageForm";
 import FAQSection from "@/components/FAQSection";
 import FinalCTA from "@/components/FinalCTA";
@@ -21,21 +19,21 @@ export default function Home() {
       >
         Pular para o conteúdo principal
       </a>
-      <Navbar />
-      <main id="main-content">
-        <HeroSection />
-        <TrustBar />
-        <ProceduresSection />
-        <TwoPathsSection />
-        <HowItWorks />
-        <BancoBrasilSection />
-        <EligibilitySection />
-        <MidPageForm />
-        <FAQSection />
-        <FinalCTA />
-        <PreFooterCTA />
-      </main>
-      <Footer />
+      <div className="pb-20 md:pb-0">
+        <Navbar />
+        <main id="main-content">
+          <HeroSection />
+          <TrustBar />
+          <ProceduresSection />
+          <HowItWorks />
+          <MidPageForm />
+          <FAQSection />
+          <FinalCTA />
+          <PreFooterCTA />
+        </main>
+        <Footer />
+      </div>
+      <MobileCTA />
     </>
   );
 }

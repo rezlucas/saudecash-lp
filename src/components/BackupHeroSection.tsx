@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function StagingHeroSection() {
+export default function BackupHeroSection() {
   return (
     <section
       className="relative bg-[#005FB9] overflow-hidden"
@@ -21,18 +21,33 @@ export default function StagingHeroSection() {
         <div className="grid md:grid-cols-2 gap-10 items-center">
           {/* Text content */}
           <div className="text-white">
+            {/* Trust badge */}
+            <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm border border-white/25 rounded-full px-4 py-1.5 mb-6">
+              <div className="w-5 h-5 rounded bg-[#FBFB2F] flex items-center justify-center shrink-0">
+                <svg className="w-3 h-3 text-[#003F7A]" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <span className="text-sm font-semibold text-white">Crédito para saúde pelo Banco do Brasil</span>
+            </div>
+
             <h1
               id="hero-heading"
-              className="text-2xl sm:text-3xl lg:text-4xl font-black leading-[1.15] tracking-tight mb-6"
+              className="text-3xl sm:text-4xl lg:text-5xl font-black leading-[1.15] tracking-tight mb-6"
             >
-              Fez a consulta do seu procedimento estético, mas{" "}
-              <span className="text-[#FBFB2F]">o orçamento pesou no bolso?</span>
+              Você já adiou{" "}
+              <span className="text-[#FBFB2F] whitespace-nowrap">várias vezes.</span>
+
+              <br />
+              <span className="whitespace-nowrap">Esse é o momento.</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-blue-100 leading-relaxed mb-8 max-w-lg">
-              A SaúdeCash te ajuda a realizar agora, com{" "}
-              <strong className="text-white">atendimento consultivo</strong> e
-              clínicas credenciadas.
+              Seja para realizar uma cirurgia que você sempre quis, tratar algo
+              que te incomoda há anos ou cuidar da sua saúde de verdade, a
+              SaúdeCash existe para que o{" "}
+              <strong className="text-white">valor não seja o motivo</strong> de
+              você continuar esperando.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 items-center sm:items-start">
@@ -88,23 +103,6 @@ export default function StagingHeroSection() {
                 />
               </div>
 
-              {/* BB partnership card */}
-              <div className="absolute top-4 inset-x-4 z-10 bg-[#003F7A]/95 backdrop-blur-sm rounded-2xl shadow-xl p-4 border border-white/20 flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-[#FBFB2F] flex items-center justify-center shrink-0 p-2">
-                  <Image
-                    src="/images/logos/banco-brasil-logo-curta.svg"
-                    alt="Banco do Brasil"
-                    width={32}
-                    height={32}
-                  />
-                </div>
-                <div>
-                  <p className="text-[#FBFB2F] text-[10px] font-bold uppercase tracking-widest mb-0.5">Parceria exclusiva</p>
-                  <p className="text-white font-black text-lg leading-tight mb-0.5">Banco do Brasil</p>
-                  <p className="text-blue-200 text-xs">A segurança do maior banco público do Brasil.</p>
-                </div>
-              </div>
-
               {/* Floating stat card */}
               <div className="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3 border border-gray-100">
                 <div className="w-10 h-10 rounded-xl bg-[#005FB9] flex items-center justify-center shrink-0">
@@ -119,7 +117,7 @@ export default function StagingHeroSection() {
               </div>
 
               {/* Floating parcelas card */}
-              <div className="absolute -bottom-4 -right-4 bg-[#FBFB2F] rounded-2xl shadow-xl p-4">
+              <div className="absolute -top-4 -right-4 bg-[#FBFB2F] rounded-2xl shadow-xl p-4">
                 <p className="text-xs text-[#003F7A] font-semibold">Em até</p>
                 <p className="text-2xl font-black text-[#003F7A] leading-tight">60x</p>
                 <p className="text-xs text-[#003F7A] font-medium">sem complicação</p>

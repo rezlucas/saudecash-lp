@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import StagingNavbar from "./StagingNavbar";
-import StagingHeroSection from "./StagingHeroSection";
+import BackupNavbar from "@/components/BackupNavbar";
+import BackupHeroSection from "@/components/BackupHeroSection";
 import TrustBar from "@/components/TrustBar";
-import StagingHowItWorks from "./StagingHowItWorks";
-import StagingProceduresSection from "./StagingProceduresSection";
+import TwoPathsSection from "@/components/TwoPathsSection";
+import BackupHowItWorks from "@/components/BackupHowItWorks";
+import BancoBrasilSection from "@/components/BancoBrasilSection";
+import EligibilitySection from "@/components/EligibilitySection";
+import BackupProceduresSection from "@/components/BackupProceduresSection";
 import MidPageForm from "@/components/MidPageForm";
 import FAQSection from "@/components/FAQSection";
 import FinalCTA from "@/components/FinalCTA";
@@ -17,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function StagingPage() {
+export default function BackupHomePage() {
   return (
     <>
       <a
@@ -26,12 +29,15 @@ export default function StagingPage() {
       >
         Pular para o conteúdo principal
       </a>
-      <StagingNavbar />
+      <BackupNavbar />
       <main id="main-content">
-        <StagingHeroSection />
+        <BackupHeroSection />
         <TrustBar />
-        <StagingProceduresSection />
-        <StagingHowItWorks />
+        <BackupProceduresSection />
+        <TwoPathsSection />
+        <BackupHowItWorks />
+        <BancoBrasilSection />
+        <EligibilitySection />
         <MidPageForm />
         <FAQSection />
         <FinalCTA />

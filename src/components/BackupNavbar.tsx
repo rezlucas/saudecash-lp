@@ -7,11 +7,11 @@ import Image from "next/image";
 const navLinks = [
   { label: "Como Funciona", href: "#como-funciona" },
   { label: "Procedimentos", href: "#procedimentos" },
-  { label: "Ainda não sou correntista BB", href: "/staging/correntista-bb" },
+  { label: "Banco do Brasil", href: "#banco-brasil" },
   { label: "FAQ", href: "#faq" },
 ];
 
-export default function StagingNavbar() {
+export default function BackupNavbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (

@@ -7,7 +7,7 @@ import Image from "next/image";
 const navLinks = [
   { label: "Como Funciona", href: "#como-funciona" },
   { label: "Procedimentos", href: "#procedimentos" },
-  { label: "Banco do Brasil", href: "#banco-brasil" },
+  { label: "Ainda não sou correntista BB", href: "/correntista-bb" },
   { label: "FAQ", href: "#faq" },
 ];
 

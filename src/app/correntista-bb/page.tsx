@@ -1,15 +1,7 @@
-import type { Metadata } from "next";
-import StagingNavbar from "../StagingNavbar";
+import Navbar from "@/components/Navbar";
 import BancoBrasilSection from "@/components/BancoBrasilSection";
 import EligibilitySection from "@/components/EligibilitySection";
 import Footer from "@/components/Footer";
-
-export const metadata: Metadata = {
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
 
 export default function CorrentistaBBPage() {
   return (
@@ -20,7 +12,7 @@ export default function CorrentistaBBPage() {
       >
         Pular para o conteúdo principal
       </a>
-      <StagingNavbar />
+      <Navbar />
       <main id="main-content">
         <BancoBrasilSection />
         <EligibilitySection />

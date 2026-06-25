@@ -1,39 +1,37 @@
 import Link from "next/link";
-import { Scissors, Smile, Sparkles, HeartPulse } from "lucide-react";
 
 const procedures = [
   {
-    icon: Scissors,
+    emoji: "💉",
     title: "Cirurgia Eletiva",
     description:
       "Rinoplastia, lipoaspiração, mamoplastia, abdominoplastia, blefaroplastia e outras. Para quem quer se olhar no espelho e reconhecer quem sempre quis ser.",
     tags: ["Rinoplastia", "Lipoaspiração", "Mamoplastia", "Abdominoplastia"],
   },
   {
-    icon: Smile,
+    emoji: "😁",
     title: "Odontologia",
     description:
-      "Implantes, próteses, aparelhos, alinhadores invisíveis, facetas. Um sorriso diferente muda postura, presença, autoconfiança, e não precisa ficar para depois.",
+      "Implantes, próteses, aparelhos, facetas. Um sorriso diferente muda postura, presença, autoconfiança, e não precisa ficar para depois.",
     tags: ["Implantes", "Facetas", "Aparelhos", "Próteses"],
-    featuredTag: "Alinhadores Invisíveis",
   },
   {
-    icon: Sparkles,
+    emoji: "✨",
     title: "Estética e Harmonização Facial",
     description:
       "Procedimentos realizados por profissionais habilitados em clínicas credenciadas. Cuidar da aparência é também cuidar da autoestima.",
     tags: ["Harmonização", "Botox", "Preenchimento", "Skincare"],
   },
   {
-    icon: HeartPulse,
-    title: "Tratamentos que o seu plano não cobre",
+    emoji: "🏥",
+    title: "Cirurgia por Saúde",
     description:
       "Tratamentos que o plano não cobre ou que não podem mais esperar uma fila. Porque saúde não é opcional e a falta de cobertura não deveria ser um obstáculo.",
     tags: ["Urologia", "Ortopedia", "Oftalmologia", "Ginecologia"],
   },
 ];
 
-export default function StagingProceduresSection() {
+export default function BackupProceduresSection() {
   return (
     <section
       id="procedimentos"
@@ -43,13 +41,16 @@ export default function StagingProceduresSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
+          <span className="inline-block text-[#005FB9] font-bold text-sm uppercase tracking-widest mb-3">
+            Procedimentos Cobertos
+          </span>
           <h2
             id="procedures-heading"
             className="text-3xl sm:text-4xl font-black text-[#0F172A] mb-4 tracking-tight"
           >
-            O valor não precisa ser o motivo
+            Para o que você realmente precisa
             <br />
-            <span className="text-[#005FB9]">de você continuar esperando.</span>
+            <span className="text-[#005FB9]">e o plano muitas vezes não cobre.</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             A SaúdeCash financia uma ampla gama de procedimentos em clínicas
@@ -60,15 +61,13 @@ export default function StagingProceduresSection() {
 
         {/* Procedure cards */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {procedures.map((proc) => {
-            const Icon = proc.icon;
-            return (
+          {procedures.map((proc) => (
             <div
               key={proc.title}
               className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md hover:border-[#005FB9]/20 transition-all duration-200 flex flex-col gap-4"
             >
-              <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center" aria-hidden="true">
-                <Icon className="w-6 h-6 text-[#005FB9]" strokeWidth={2} />
+              <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-2xl" aria-hidden="true">
+                {proc.emoji}
               </div>
               <div>
                 <h3 className="text-lg font-bold text-[#0F172A] mb-2">
@@ -79,11 +78,6 @@ export default function StagingProceduresSection() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-1.5 mt-auto">
-                {proc.featuredTag && (
-                  <span className="text-xs font-medium bg-[#FBFB2F] text-[#003F7A] px-2.5 py-1 rounded-full">
-                    {proc.featuredTag}
-                  </span>
-                )}
                 {proc.tags.map((tag) => (
                   <span
                     key={tag}
@@ -103,8 +97,7 @@ export default function StagingProceduresSection() {
                 </svg>
               </Link>
             </div>
-            );
-          })}
+          ))}
         </div>
 
       </div>
